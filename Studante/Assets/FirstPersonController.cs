@@ -38,7 +38,7 @@ public class FirstPersonController : MonoBehaviour
         {
             Jump();
         }
-
+   
 
     }
 
