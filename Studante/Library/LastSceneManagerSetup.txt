@@ -1,9 +1,5 @@
 sceneSetups:
-- path: Assets/Controller/Controller_RigidBody.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
 - path: Assets/Scena_Selva/Scenes/Scena_Selva.unity
   isLoaded: 1
-  isActive: 0
+  isActive: 1
   isSubScene: 0
