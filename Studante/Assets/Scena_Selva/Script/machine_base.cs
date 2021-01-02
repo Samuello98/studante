@@ -5,7 +5,7 @@ using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class FiniteStateMachine : MonoBehaviour
+public class machine_base : MonoBehaviour
 {
     public enum GuardState
     {
@@ -15,27 +15,33 @@ public class FiniteStateMachine : MonoBehaviour
     }
 
     [SerializeField] private List<Transform> _waypoints;
-    //[SerializeField] private GameObject _target;
+    [SerializeField] public GameObject _target;
     [SerializeField] private float _minChaseDistance = 3f;
     [SerializeField] private float _minAttackDistance = 2f;
     [SerializeField] private float _stoppingDistance = 1f;
 
     private GuardState _currentGuardState;
     private NavMeshAgent _navMeshAgent;
-    public Transform transformToFollow;
+    private Animator _animator;
+
+    
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _currentGuardState = GuardState.Patrol;
+        _animator = GetComponent<Animator>();
 
     }
 
-    void Update()
+    void FixedUpdate()
     {
 
         Debug.Log(_currentGuardState);
+        Debug.Log(_animator.GetBool("walk"));
         UpdateState(); //cosa fare
         CheckTransition(); //come cambiare 
+        SetAnimation();
+        
     }
 
     private void UpdateState()
@@ -43,10 +49,10 @@ public class FiniteStateMachine : MonoBehaviour
         switch (_currentGuardState)
         {
             case GuardState.Patrol:
-                
+                Stop();
                 break;
             case GuardState.Chase:
-                _navMeshAgent.destination = transformToFollow.position;
+                FollowTarget();
                 break;
             case GuardState.Attack:
                 Attack();
@@ -64,26 +70,35 @@ public class FiniteStateMachine : MonoBehaviour
         {
             case GuardState.Patrol:
                 if (IsTargetWithinDistance(_minChaseDistance))
+                {
                     newGuardState = GuardState.Chase;
-                break;
-
+                }
+                    break;
+                
             case GuardState.Chase:
                 if (!IsTargetWithinDistance(_minChaseDistance))
                 {
                     newGuardState = GuardState.Patrol;
-                    break;
+
                 }
+                    
+                    break;
+                
 
                 if (IsTargetWithinDistance(_minAttackDistance))
                 {
                     newGuardState = GuardState.Attack;
-                    break;
+                    //_navMeshAgent.speed = 10f;
+                    
                 }
-                break;
+                   break;
 
             case GuardState.Attack:
                 if (!IsTargetWithinDistance(_stoppingDistance))
+                {
                     newGuardState = GuardState.Chase;
+                  //  _navMeshAgent.speed = 3.5f;
+                }
                 break;
 
             default:
@@ -103,7 +118,7 @@ public class FiniteStateMachine : MonoBehaviour
         {
             _navMeshAgent.isStopped = true;
 
-            Vector3 targetDirection = transformToFollow.position - transform.position;
+            Vector3 targetDirection = _target.transform.position - transform.position;
             targetDirection.y = 0;
             Quaternion targetRotation = Quaternion.LookRotation(targetDirection);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 150f * Time.deltaTime);
@@ -115,7 +130,21 @@ public class FiniteStateMachine : MonoBehaviour
     private void FollowTarget()
     {
         _navMeshAgent.isStopped = false;
-        _navMeshAgent.SetDestination(transformToFollow.position);
+        _navMeshAgent.SetDestination(_target.transform.position);
+    }
+
+    private void SetAnimation()
+    {
+        if(_currentGuardState == GuardState.Patrol)
+        {
+            _animator.SetBool("walk", false);
+        }
+        if(_currentGuardState == GuardState.Chase || _currentGuardState == GuardState.Attack)
+        {
+            _animator.SetBool("walk", true);
+            
+        }
+
     }
 
     /*private void SetWayPointDestination()
@@ -131,7 +160,12 @@ public class FiniteStateMachine : MonoBehaviour
 
     private bool IsTargetWithinDistance(float distance)
     {
-        return (transformToFollow.position - transform.position).sqrMagnitude <= distance * distance;
+        return (_target.transform.position - transform.position).sqrMagnitude <= distance * distance;
+    }
+
+    private void Stop()
+    {
+        _navMeshAgent.isStopped = true;
     }
 
 
