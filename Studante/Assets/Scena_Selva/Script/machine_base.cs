@@ -16,9 +16,9 @@ public class machine_base : MonoBehaviour
 
     [SerializeField] private List<Transform> _waypoints;
     [SerializeField] public GameObject _target;
-    [SerializeField] private float _minChaseDistance = 3f;
-    [SerializeField] private float _minAttackDistance = 2f;
-    [SerializeField] private float _stoppingDistance = 1f;
+    [SerializeField] private float _minChaseDistance;
+    [SerializeField] private float _minAttackDistance;
+    [SerializeField] private float _stoppingDistance;
 
     private GuardState _currentGuardState;
     private NavMeshAgent _navMeshAgent;
@@ -40,7 +40,8 @@ public class machine_base : MonoBehaviour
         Debug.Log(_animator.GetBool("walk"));
         UpdateState(); //cosa fare
         CheckTransition(); //come cambiare 
-        SetAnimation();
+        Debug.Log("posizione fiera" + transform.position + "posizione target " + _target.transform.position);
+        
         
     }
 
@@ -72,6 +73,7 @@ public class machine_base : MonoBehaviour
                 if (IsTargetWithinDistance(_minChaseDistance))
                 {
                     newGuardState = GuardState.Chase;
+                    _animator.SetBool("walk", true);
                 }
                     break;
                 
@@ -79,16 +81,16 @@ public class machine_base : MonoBehaviour
                 if (!IsTargetWithinDistance(_minChaseDistance))
                 {
                     newGuardState = GuardState.Patrol;
+                    _animator.SetBool("walk", false);
 
                 }
                     
-                    break;
                 
 
                 if (IsTargetWithinDistance(_minAttackDistance))
                 {
                     newGuardState = GuardState.Attack;
-                    //_navMeshAgent.speed = 10f;
+                    _navMeshAgent.speed = 10f;
                     
                 }
                    break;
@@ -97,7 +99,7 @@ public class machine_base : MonoBehaviour
                 if (!IsTargetWithinDistance(_stoppingDistance))
                 {
                     newGuardState = GuardState.Chase;
-                  //  _navMeshAgent.speed = 3.5f;
+                    _navMeshAgent.speed = 3.5f;
                 }
                 break;
 
@@ -116,7 +118,7 @@ public class machine_base : MonoBehaviour
     {
         if (IsTargetWithinDistance(_stoppingDistance))
         {
-            _navMeshAgent.isStopped = true;
+            
 
             Vector3 targetDirection = _target.transform.position - transform.position;
             targetDirection.y = 0;
@@ -129,23 +131,13 @@ public class machine_base : MonoBehaviour
 
     private void FollowTarget()
     {
-        _navMeshAgent.isStopped = false;
+        
         _navMeshAgent.SetDestination(_target.transform.position);
     }
 
-    private void SetAnimation()
-    {
-        if(_currentGuardState == GuardState.Patrol)
-        {
-            _animator.SetBool("walk", false);
-        }
-        if(_currentGuardState == GuardState.Chase || _currentGuardState == GuardState.Attack)
-        {
-            _animator.SetBool("walk", true);
-            
-        }
+    
 
-    }
+    
 
     /*private void SetWayPointDestination()
     {
@@ -165,7 +157,7 @@ public class machine_base : MonoBehaviour
 
     private void Stop()
     {
-        _navMeshAgent.isStopped = true;
+        
     }
 
 
