@@ -6,9 +6,15 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
 
-    [SerializeField] Animator animator; 
+    public Animator animator_D;
+    public Animator animator_Q;
     public Text nameText;
     public Text dialogueText;
+    public Text rightAnswer;
+    public Text wrongAnswer1;
+    public Text wrongAnswer2;
+    public Text wrongAnswer3;
+
 
     private Queue<string> sentences; 
     void Start()
@@ -19,7 +25,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
 
-        animator.SetBool("IsOpen", true);
+        animator_D.SetBool("IsOpen", true);
+
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -31,21 +38,55 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-    public void DisplayNextSentence() { 
-   
+    public void DisplayNextSentence() {
+
         if (sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
+        
         string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    IEnumerator TypeSentence (string sentence)
+    {
+        dialogueText.text = "";
+        foreach(char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
     }
 
     public void EndDialogue()
     {
-        animator.SetBool("IsOpen", false);
+        animator_D.SetBool("IsOpen", false);
 
+    }
+
+    public void StartQuiz()
+    {
+        animator_Q.SetBool("DisplayQuiz", true);
+    }
+
+    public void CorrectAnswer()
+    {
+        Debug.Log("Right Answer");
+        EndQuiz();
+    }
+
+    public void WrongAnswer()
+    {
+        Debug.Log("Wrong Answer");
+    }
+
+
+    public void EndQuiz()
+    {
+        animator_Q.SetBool("DisplayQuiz", false);
     }
 
         
