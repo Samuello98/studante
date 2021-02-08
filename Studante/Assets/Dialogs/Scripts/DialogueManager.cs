@@ -8,12 +8,15 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator_D;
     public Animator animator_Q;
+    public bool isQuiz;
     public Text nameText;
     public Text dialogueText;
     public Text rightAnswer;
     public Text wrongAnswer1;
     public Text wrongAnswer2;
     public Text wrongAnswer3;
+    public Button button;
+
 
 
     private Queue<string> sentences; 
@@ -40,10 +43,21 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence() {
 
+        if (sentences.Count == 1)
+        {
+            if (isQuiz)
+            {
+                button.interactable = false;
+                animator_Q.SetBool("DisplayQuiz", true);
+            }
+        }
+
         if (sentences.Count == 0)
         {
-            EndDialogue();
-            return;
+           
+                EndDialogue();
+                return;
+          
         }
         
         string sentence = sentences.Dequeue();
@@ -64,23 +78,38 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator_D.SetBool("IsOpen", false);
+        EndQuiz();
 
     }
 
     public void StartQuiz()
-    {
+    {   button.interactable = false;
+        Debug.Log(button.interactable);
         animator_Q.SetBool("DisplayQuiz", true);
+        
     }
 
     public void CorrectAnswer()
     {
-        Debug.Log("Right Answer");
-        EndQuiz();
+
+        string feedback = "Right Answer!";
+        Debug.Log(feedback);
+        sentences.Enqueue(feedback);
+        DisplayNextSentence();
+        button.interactable = true;
+
+
+
     }
 
     public void WrongAnswer()
     {
-        Debug.Log("Wrong Answer");
+        string feedback = "Wrong Answer, try again";
+        Debug.Log(feedback);
+        sentences.Enqueue(feedback);
+        DisplayNextSentence();
+
+        
     }
 
 
