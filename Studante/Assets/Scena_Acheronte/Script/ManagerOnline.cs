@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ManagerOnline : MonoBehaviour
 {
-
+    public Camera sceneCam;
     public Camera carCam;
     public BoatMovement boatScript;
 
@@ -14,7 +14,7 @@ public class ManagerOnline : MonoBehaviour
 
     void Start()
     {
-        userCtrl.enabled = false;
+        boatScript.enabled = false;
         carCam.enabled = false;
         inVeh = false;
     }
@@ -35,6 +35,7 @@ public class ManagerOnline : MonoBehaviour
         if (inVeh == false)
         {
             player = playerObj;
+            sceneCam.enabled = false;
             carCam.enabled = true;
             boatScript.enabled = true;
             player.SetActive(false);
