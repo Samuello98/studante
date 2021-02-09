@@ -28,7 +28,6 @@ public class FirstPersonCharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_isGrounded);
         UpdateCursor();
 
         if (Cursor.lockState == CursorLockMode.None)
