@@ -46,6 +46,7 @@ public class ManagerOnline : MonoBehaviour
         else
         {
             player.SetActive(true);
+            sceneCam.enabled = true;
             carCam.enabled = false;
             boatScript.enabled = false;
             player.transform.parent = null;

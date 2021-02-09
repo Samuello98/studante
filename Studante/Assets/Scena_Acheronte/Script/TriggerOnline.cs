@@ -7,7 +7,6 @@ public class TriggerOnline : MonoBehaviour
 
     private bool inTrigger;
     private GameObject player;
-
     public ManagerOnline carMan;
 
     void Update()

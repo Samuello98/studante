@@ -9,7 +9,7 @@ public class BoatMovement : MonoBehaviour
     public Rigidbody rb;
 
     //camera locked in minimum and maximum of the vertical axes
-    public float camRotationSpeed = 5f;
+    public float camRotationSpeed = 1f;
     public float cameraMinimumY = -60f;
     public float cameraMaximumY = 75f;
     public float rotationSmoothSpeed = 10f;
@@ -34,36 +34,36 @@ public class BoatMovement : MonoBehaviour
     }
     void Update()
     {
-        //LookRotation();
-        //Movement();
+        LookRotation();
+        Movement();
 
 
     }
     void startMovement()
     {
-        Debug.Log("Boats' n Hoes ");
+       Debug.Log("Boats' n Hoes ");
     }
 
     void LookRotation()
     {
         //lock the cursor and hide 
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+        //Cursor.lockState = CursorLockMode.Locked;
 
         //Get camera and body rotational values
         bodyRotationX += Input.GetAxis("Mouse X") * camRotationSpeed;
         camRotationY += Input.GetAxis("Mouse Y") * camRotationSpeed;
 
         //Stop our camera from rotating 
-        camRotationY = Mathf.Clamp(camRotationY, cameraMinimumY, cameraMaximumY);
+       camRotationY = Mathf.Clamp(camRotationY, cameraMinimumY, cameraMaximumY);
 
         //create rotation and handle rotation of the body of the camera
         Quaternion camTargetRotation = Quaternion.Euler(-camRotationY, 0, 0);
         Quaternion bodyTargetRotation = Quaternion.Euler(0, bodyRotationX, 0);
 
         //handle rotations 
-        transform.rotation = Quaternion.Lerp(transform.rotation, bodyTargetRotation, Time.deltaTime * rotationSmoothSpeed);
-        camera.localRotation = Quaternion.Lerp(camera.localRotation, camTargetRotation, Time.deltaTime * rotationSmoothSpeed);
+        //transform.rotation = Quaternion.Lerp(transform.rotation, bodyTargetRotation, Time.deltaTime * rotationSmoothSpeed);
+        //camera.localRotation = Quaternion.Lerp(camera.localRotation, camTargetRotation, Time.deltaTime * rotationSmoothSpeed);
 
     }
 

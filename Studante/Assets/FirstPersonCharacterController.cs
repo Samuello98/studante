@@ -28,14 +28,14 @@ public class FirstPersonCharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(_isGrounded);
+        //Debug.Log(_isGrounded);
         UpdateCursor();
 
         if (Cursor.lockState == CursorLockMode.None)
             return;
 
         //Ground Check
-        _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, _groundMask);
+       _isGrounded = Physics.CheckSphere(_groundCheck.position, _groundDistance, _groundMask);
 
         if (_isGrounded && _velocity.y < 0f)
         {
