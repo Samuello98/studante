@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Scena_Prova/ScenaProva.unity
+=======
+- path: Assets/Scena_Acheronte/Scenes/Scena_Acheronte.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
