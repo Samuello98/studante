@@ -9,6 +9,7 @@ public class FPSInteractionManager : MonoBehaviour
     [SerializeField] private float _interactionDistance;
 
     [SerializeField] private Image _target;
+    [SerializeField] private Canvas targetDialogue;
 
     private Interactable _pointingInteractable;
     private Grabbable _pointingGrabbable;
