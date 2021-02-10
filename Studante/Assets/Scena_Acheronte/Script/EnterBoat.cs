@@ -1,48 +1,50 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+
 
 public class EnterBoat : MonoBehaviour
 {
     private bool inVehicle = false;
-    public GameObject player;
-    public BoatMovement boatScript;
+    public BoatMovement vehicleScript;
     public GameObject guiObj;
-    
+    public GameObject player;
+
+
     void Start()
     {
         
+        
         guiObj.SetActive(false);
-        boatScript.enabled = false; 
     }
 
+    // Update is called once per frame
     void OnTriggerStay(Collider other)
     {
-        if (inVehicle == false)
+        if (other.gameObject.tag == "Player" && inVehicle == false)
         {
             guiObj.SetActive(true);
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.E))
             {
                 guiObj.SetActive(false);
                 player.transform.parent = gameObject.transform;
-                boatScript.enabled = true;
-                player.SetActive(true);
+                vehicleScript.enabled = true;
+                player.SetActive(false);
                 inVehicle = true;
-
             }
         }
     }
-    void onTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        guiObj.SetActive(false);
+        if (other.gameObject.tag == "Player")
+        {
+            guiObj.SetActive(false);
+        }
     }
-        
-    
     void Update()
     {
-        if( inVehicle == true && Input.GetKey(KeyCode.Space))
+        if (inVehicle == true && Input.GetKey(KeyCode.F))
         {
-            boatScript.enabled = false;
+            vehicleScript.enabled = false;
             player.SetActive(true);
             player.transform.parent = null;
             inVehicle = false;

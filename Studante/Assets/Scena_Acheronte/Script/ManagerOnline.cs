@@ -10,7 +10,7 @@ public class ManagerOnline : MonoBehaviour
     public BoatMovement boatScript;
 
     private bool inVeh;
-    private GameObject player;
+    public GameObject player;
 
     void Start()
     {
