@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1788385775}
-  carMan: {fileID: 919132148179410226}
+  carMan: {fileID: 1646120532}
   canvas: {fileID: 1191242692}
 --- !u!1 &253563002
 GameObject:
@@ -388,7 +388,7 @@ PrefabInstance:
     - target: {fileID: 1161964201481169362, guid: 84ceb5ec731c3324a99cfd1db1b421e3,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1161964201481169375, guid: 84ceb5ec731c3324a99cfd1db1b421e3,
         type: 3}
@@ -534,7 +534,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 463448023}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.44, y: 1.85, z: 0.08}
+  m_LocalPosition: {x: -2.952, y: 2.33, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543450652434515857}
@@ -1116,6 +1116,7 @@ GameObject:
   - component: {fileID: 1646120531}
   - component: {fileID: 1646120530}
   - component: {fileID: 1646120529}
+  - component: {fileID: 1646120532}
   m_Layer: 0
   m_Name: barca_Empty
   m_TagString: Untagged
@@ -1173,6 +1174,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1646120532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646120528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2dc266f90afea54ab81f6e12b364d52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneCam: {fileID: 1861640841}
+  carCam: {fileID: 463448024}
+  boatScript: {fileID: 1646120530}
+  player: {fileID: 1788385775}
 --- !u!1001 &1677160843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1498,22 +1515,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.7991934, y: 0.31, z: 1.5467166}
   m_Center: {x: 0.058992505, y: 0.13, z: 0.0000019073486}
---- !u!114 &919132148179410226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132148179410219}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2dc266f90afea54ab81f6e12b364d52, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneCam: {fileID: 1861640841}
-  carCam: {fileID: 463448024}
-  boatScript: {fileID: 0}
-  player: {fileID: 1788385775}
 --- !u!143 &919132148179410228
 CharacterController:
   m_ObjectHideFlags: 0
