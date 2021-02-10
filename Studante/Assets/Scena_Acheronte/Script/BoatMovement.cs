@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BoatMovement: MonoBehaviour
 {
-    public float mouseSensitivity = 100f;
+    public float mouseSensitivity = 3f;
     public Transform playerBody;
     public CharacterController controller;
     public float speed = 12f;
@@ -32,7 +32,7 @@ public class BoatMovement: MonoBehaviour
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = transform.right * x + transform.forward * z;
-        if( x == 0 && z == 0)
+       if( x == 0 && z == 0)
         {
             animator.SetBool("isMoving", false);
         }
@@ -41,12 +41,15 @@ public class BoatMovement: MonoBehaviour
             animator.SetBool("isMoving", true);
         }
 
-        controller.Move(move * speed * Time.deltaTime);
+        controller.Move(move * speed * Time.deltaTime); 
     }
     void Rotation()
     {
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        Debug.Log("valore mouseX: " + mouseX);
+
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        Debug.Log("valore mouseY: " + mouseY);
 
         xRotation = -mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
