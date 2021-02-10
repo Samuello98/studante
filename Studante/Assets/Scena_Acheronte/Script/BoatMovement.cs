@@ -12,18 +12,22 @@ public class BoatMovement: MonoBehaviour
     public Animator animator; 
 
 
-    float xRotation = 0f;   
+    float xRotation = 0f; 
+    float yRotation = 90f; 
+   
 
    
 
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        yRotation = playerBody.localEulerAngles.y;
     }
     void Update()
-    {
-        Movement();
+    {   
         Rotation();
+        Movement();
+        
 
     }
     void Movement()
@@ -31,7 +35,8 @@ public class BoatMovement: MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
+        Vector3 move = (transform.right * x + transform.forward * z).normalized;
+        
        if( x == 0 && z == 0)
         {
             animator.SetBool("isMoving", false);
@@ -51,11 +56,12 @@ public class BoatMovement: MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
         Debug.Log("valore mouseY: " + mouseY);
 
-        xRotation = -mouseY;
+        xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        playerBody.Rotate(Vector3.up * mouseX);
+        playerBody.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+        transform.Rotate(Vector3.up, mouseX);
+        //playerBody.Rotate(playerBody.transform.right * xRotation);
     }
    
 
