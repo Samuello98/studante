@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scena_Girone1/Scenes/Scena_Girone1.unity
+=======
+- path: Assets/Scena_Selva/Scenes/Scena_Selva.unity
+>>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0
