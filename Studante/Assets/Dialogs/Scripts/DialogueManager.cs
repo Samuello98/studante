@@ -8,7 +8,8 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator_D;
     public Animator animator_Q;
-    public bool isQuiz;
+    public Dialogue dialogue; 
+    private bool isQuiz;
     public Text nameText;
     public Text dialogueText;
     public Text rightAnswer;
@@ -23,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        isQuiz = dialogue.isQuiz; 
     }
 
     public void StartDialogue(Dialogue dialogue)
