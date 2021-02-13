@@ -152,10 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator_D: {fileID: 166140233}
   animator_Q: {fileID: 166140232}
-  dialogue:
-    sentences: []
-    name: 
-    isQuiz: 0
+  isQuiz: 1
   nameText: {fileID: 166140231}
   dialogueText: {fileID: 166140230}
   rightAnswer: {fileID: 166140229}
@@ -376,6 +373,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3441495932088337348, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495932100826344, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Text
@@ -387,10 +389,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogo_due
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299315, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495932255299324, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299324, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3441495932255299327, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
@@ -497,6 +509,28 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299327, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299327, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299327, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495932316724073, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Continue D2
+
+'
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495932350662389, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Text
@@ -565,6 +599,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CorrectAnswer
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495934059680738, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 279
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495934059680738, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -427
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495934059680739, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_Name
+      value: Continue Button_2
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495934059680749, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -578,9 +627,14 @@ PrefabInstance:
     - target: {fileID: 3441495934210976654, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Text
-      value: 'Virgilio
+      value: 'Virgilio D2
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495934210976655, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1f186ac68f8b743ba86cedaeaadc96, type: 3}
@@ -1351,6 +1405,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogo_uno
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299315, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495932255299324, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Camera
@@ -1461,6 +1520,23 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495932266370657, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495932316724073, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Continue D1
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495932316724078, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495932350662389, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Text
@@ -1481,6 +1557,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495933335214210, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495933335214222, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: dialogue.isQuiz
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3441495933360791813, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
@@ -1529,6 +1615,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: CorrectAnswer
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495934059680738, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -326.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495934059680738, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 279
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495934059680739, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_Name
+      value: Continue Button_1
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495934059680749, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1542,7 +1643,7 @@ PrefabInstance:
     - target: {fileID: 3441495934210976654, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_Text
-      value: 'Virgilio
+      value: 'Virgilio D1
 
 '
       objectReference: {fileID: 0}
@@ -1560,6 +1661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 5.8909893
+      objectReference: {fileID: 0}
+    - target: {fileID: 3441495934210976655, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac1f186ac68f8b743ba86cedaeaadc96, type: 3}
@@ -2058,10 +2164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator_D: {fileID: 694550759}
   animator_Q: {fileID: 694550758}
-  dialogue:
-    sentences: []
-    name: 
-    isQuiz: 0
+  isQuiz: 0
   nameText: {fileID: 694550757}
   dialogueText: {fileID: 694550756}
   rightAnswer: {fileID: 0}

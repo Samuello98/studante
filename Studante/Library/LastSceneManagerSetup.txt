@@ -3,14 +3,6 @@ sceneSetups:
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Scena_Selva/Scenes/Scena_Selva.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
-- path: Assets/Scena_Prova/ScenaProva.unity
-  isLoaded: 0
-  isActive: 0
-  isSubScene: 0
 - path: Assets/Dialogs/Dialog Scene.unity
   isLoaded: 0
   isActive: 0

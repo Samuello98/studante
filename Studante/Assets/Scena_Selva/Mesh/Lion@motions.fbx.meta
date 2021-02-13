@@ -2,7 +2,40 @@ fileFormatVersion: 2
 guid: deeb12516446f3646be65ce3e41c7e14
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -8960461885284013506
+    second: 01 Attack
+  - first:
+      74: -6036611963574189534
+    second: 02 Down In
+  - first:
+      74: -3688077235002523681
+    second: 03 Down Loop
+  - first:
+      74: -7647961648236193075
+    second: 04 Down Out
+  - first:
+      74: 4425427396558129801
+    second: 05 Firing Double
+  - first:
+      74: -7695790874475801744
+    second: 06 Idle01
+  - first:
+      74: 1340239209139783072
+    second: 07 Idle02
+  - first:
+      74: -8444471228227076724
+    second: 08 Idle03
+  - first:
+      74: 8806564564768309918
+    second: 09 Passout
+  - first:
+      74: 6097248765290872664
+    second: 10 Run
+  - first:
+      74: -4504986663452917554
+    second: 11 Walk
   externalObjects: {}
   materials:
     materialImportMode: 1

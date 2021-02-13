@@ -8,8 +8,7 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator_D;
     public Animator animator_Q;
-    public Dialogue dialogue; 
-    private bool isQuiz;
+    public bool isQuiz;
     public Text nameText;
     public Text dialogueText;
     public Text rightAnswer;
@@ -17,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public Text wrongAnswer2;
     public Text wrongAnswer3;
     public Button button;
+    
 
 
 
@@ -24,7 +24,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
-        isQuiz = dialogue.isQuiz; 
+        
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -81,6 +81,8 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator_D.SetBool("IsOpen", false);
+    
+
         EndQuiz();
 
     }
