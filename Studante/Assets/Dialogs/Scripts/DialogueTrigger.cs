@@ -8,7 +8,8 @@ public class DialogueTrigger : Interactable
     private bool clicked = false;
     public override void  Interact(GameObject caller)
     {
-        if(clicked==false) { 
+        if(clicked==false) 
+        { 
         TriggerDialogue();
             clicked =true;
     }

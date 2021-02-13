@@ -51,6 +51,7 @@ public class DialogueManager : MonoBehaviour
             {
                 button.interactable = false;
                 animator_Q.SetBool("DisplayQuiz", true);
+                StartQuiz();
             }
         }
 
