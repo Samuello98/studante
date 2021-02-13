@@ -11,7 +11,7 @@ public class machine_base : MonoBehaviour
     {
         Patrol,
         Chase,
-        Attack
+     //   Attack
     }
 
     [SerializeField] private List<Transform> _waypoints;
@@ -19,10 +19,13 @@ public class machine_base : MonoBehaviour
     [SerializeField] private float _minChaseDistance;
     [SerializeField] private float _minAttackDistance;
     [SerializeField] private float _stoppingDistance;
+    public GameObject Virgilio;
+    public Canvas canvas;
 
     private GuardState _currentGuardState;
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
+    private bool chased = false;
 
     
     void Start()
@@ -31,16 +34,18 @@ public class machine_base : MonoBehaviour
         _currentGuardState = GuardState.Patrol;
         _animator = GetComponent<Animator>();
 
+
     }
 
     void FixedUpdate()
     {
 
         Debug.Log(_currentGuardState);
-        Debug.Log(_animator.GetBool("walk"));
+        
         UpdateState(); //cosa fare
         CheckTransition(); //come cambiare 
         Debug.Log("posizione fiera" + transform.position + "posizione target " + _target.transform.position);
+        
         
         
     }
@@ -54,10 +59,13 @@ public class machine_base : MonoBehaviour
                 break;
             case GuardState.Chase:
                 FollowTarget();
+                chased = true;
+                StartCoroutine(activateVirgilio());
+
                 break;
-            case GuardState.Attack:
+          /*  case GuardState.Attack:
                 Attack();
-                break;
+                break; */
             default:
                 throw new ArgumentOutOfRangeException();
         }
@@ -84,24 +92,24 @@ public class machine_base : MonoBehaviour
                     _animator.SetBool("walk", false);
 
                 }
-                    
+                break;
                 
 
-                if (IsTargetWithinDistance(_minAttackDistance))
+          /*      if (IsTargetWithinDistance(_minAttackDistance))
                 {
                     newGuardState = GuardState.Attack;
                     _navMeshAgent.speed = 10f;
                     
                 }
-                   break;
+                   break; */
 
-            case GuardState.Attack:
+          /*  case GuardState.Attack:
                 if (!IsTargetWithinDistance(_stoppingDistance))
                 {
                     newGuardState = GuardState.Chase;
                     _navMeshAgent.speed = 3.5f;
                 }
-                break;
+                break; */
 
             default:
                 throw new ArgumentOutOfRangeException();
@@ -114,7 +122,7 @@ public class machine_base : MonoBehaviour
         }
     }
 
-    private void Attack()
+    /*private void Attack()
     {
         if (IsTargetWithinDistance(_stoppingDistance))
         {
@@ -127,12 +135,30 @@ public class machine_base : MonoBehaviour
         }
         else
             FollowTarget();
-    }
+    }*/
 
     private void FollowTarget()
     {
         
         _navMeshAgent.SetDestination(_target.transform.position);
+    }
+
+    public IEnumerator activateVirgilio()
+    {
+        if (chased)
+        {
+            yield return new WaitForSeconds(10f);
+            Virgilio.SetActive(true);
+            StartCoroutine(ViaDialogo());
+        }
+
+       
+    }
+    public IEnumerator ViaDialogo()
+    {
+        yield return new WaitForSeconds(3f);
+        canvas.enabled = false; 
+
     }
 
     
