@@ -1,9 +1,9 @@
 sceneSetups:
-- path: Assets/ScenaSelva.unity
+- path: Assets/Scena_Acheronte/Scenes/Scena_Acheronte.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
-- path: Assets/Dialogs/Dialog Scene.unity
+- path: Assets/ScenaSelva.unity
   isLoaded: 0
   isActive: 0
   isSubScene: 0
