@@ -8,13 +8,8 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator_D;
     public Animator animator_Q;
-    public bool isQuiz;
     public Text nameText;
     public Text dialogueText;
-    public Text rightAnswer;
-    public Text wrongAnswer1;
-    public Text wrongAnswer2;
-    public Text wrongAnswer3;
     public Button button;
     
 
@@ -45,15 +40,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence() {
 
-        if (sentences.Count == 1)
-        {
-            if (isQuiz)
-            {
-                button.interactable = false;
-                animator_Q.SetBool("DisplayQuiz", true);
-                StartQuiz();
-            }
-        }
+       
 
         if (sentences.Count == 0)
         {
@@ -83,45 +70,10 @@ public class DialogueManager : MonoBehaviour
         animator_D.SetBool("IsOpen", false);
     
 
-        EndQuiz();
+      
 
     }
 
-    public void StartQuiz()
-    {   button.interactable = false;
-        Debug.Log(button.interactable);
-        animator_Q.SetBool("DisplayQuiz", true);
-        
-    }
-
-    public void CorrectAnswer()
-    {
-
-        string feedback = "Right Answer!";
-        Debug.Log(feedback);
-        sentences.Enqueue(feedback);
-        DisplayNextSentence();
-        button.interactable = true;
-
-
-
-    }
-
-    public void WrongAnswer()
-    {
-        string feedback = "Wrong Answer, try again";
-        Debug.Log(feedback);
-        sentences.Enqueue(feedback);
-        DisplayNextSentence();
-
-        
-    }
-
-
-    public void EndQuiz()
-    {
-        animator_Q.SetBool("DisplayQuiz", false);
-    }
 
         
     

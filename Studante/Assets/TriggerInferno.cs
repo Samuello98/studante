@@ -18,7 +18,7 @@ public class TriggerInferno : MonoBehaviour
         }
     }public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManagerQuiz>().StartDialogue(dialogue);
         
     }
 }

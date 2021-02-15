@@ -16,7 +16,7 @@ public class DialogueTrigger : Interactable
     }
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManagerDialogo>().StartDialogue(dialogue);
         
     }
 }
