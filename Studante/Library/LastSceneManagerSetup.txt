@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scena_Acheronte/Scenes/Scena_Acheronte.unity
+=======
+- path: Assets/ScenaSelva.unity
+>>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0
