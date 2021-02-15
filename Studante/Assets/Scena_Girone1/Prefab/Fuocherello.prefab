@@ -23,9 +23,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4428119924650565897}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.09187317, y: -0.12199998, z: -0.038594723}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.84745747, y: 0.8474578, z: 0.84745765}
   m_Children:
   - {fileID: 8667669320925614020}
   - {fileID: 8667669319136952607}
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 8667669320600418117}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: 0}
 --- !u!1 &8667669319136952606
 GameObject:
   m_ObjectHideFlags: 0
@@ -77,7 +77,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.51984906, b: 0, a: 1}
-  m_Intensity: 0.5
+  m_Intensity: 1
   m_Range: 2
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -111,7 +111,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -151,7 +151,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8667669319451769879}
   m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.517}
+  m_LocalPosition: {x: -0, y: -0, z: 0.601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8329317236330729937}
@@ -169,13 +169,13 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9811321, g: 0.72002685, b: 0.4026344, a: 1}
-  m_Intensity: 2
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -203,7 +203,7 @@ Light:
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -6309,9 +6309,9 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 10987
+        atime0: 45682
         atime1: 65535
-        atime2: 0
+        atime2: 65535
         atime3: 0
         atime4: 0
         atime5: 0
@@ -8815,7 +8815,7 @@ ParticleSystem:
     intensityCurve:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.63
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
