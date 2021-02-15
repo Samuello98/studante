@@ -21,7 +21,7 @@ public class TriggerStop : MonoBehaviour
     }
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        FindObjectOfType<DialogueManagerDialogo>().StartDialogue(dialogue);
 
     }
 }

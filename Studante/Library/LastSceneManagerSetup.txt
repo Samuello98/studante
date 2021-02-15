@@ -1,5 +1,9 @@
 sceneSetups:
-- path: Assets/Scena_Selva/Scenes/ScenaSelva.unity
+- path: Assets/Scena_Girone1/Scenes/Scena_Girone2.unity
   isLoaded: 1
   isActive: 1
+  isSubScene: 0
+- path: Assets/Scena_Selva/Scenes/ScenaSelva.unity
+  isLoaded: 0
+  isActive: 0
   isSubScene: 0
