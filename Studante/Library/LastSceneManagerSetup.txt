@@ -1,4 +1,6 @@
+<<<<<<< HEAD
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scena_Prova/Acheronte_Fix.unity
   isLoaded: 1
   isActive: 1
@@ -7,3 +9,12 @@ sceneSetups:
   isLoaded: 0
   isActive: 0
   isSubScene: 0
+=======
+- path: Assets/Scena_Acheronte/Scenes/Scena_Acheronte.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+=======
+sceneSetups: []
+>>>>>>> main
+>>>>>>> main
