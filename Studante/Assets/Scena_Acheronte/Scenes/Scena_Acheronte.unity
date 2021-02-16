@@ -400,9 +400,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneCam: {fileID: 1861640841}
-  carCam: {fileID: 0}
-  boatScript: {fileID: 0}
-  player: {fileID: 0}
+  carCam: {fileID: 502714212}
+  boatScript: {fileID: 292992076}
+  player: {fileID: 1788385775}
 --- !u!1 &206853880
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,7 @@ public class machine_base : MonoBehaviour
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
     private bool chased = false;
+    public GameObject target2;
 
     
     void Start()
@@ -149,6 +150,7 @@ public class machine_base : MonoBehaviour
         {
             yield return new WaitForSeconds(10f);
             Virgilio.SetActive(true);
+            _target = target2;
             StartCoroutine(ViaDialogo());
         }
 
