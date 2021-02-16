@@ -26,11 +26,11 @@ public class DialogueManagerMinosse : MonoBehaviour
     {
         sentences = new Queue<string>();
 
-
     }
 
     public void StartDialogue(Dialogue dialogue)
     {
+        Cursor.lockState = CursorLockMode.None;
 
         animator_D.SetBool("IsOpen", true);
 
@@ -87,6 +87,7 @@ public class DialogueManagerMinosse : MonoBehaviour
 
 
         EndQuiz();
+        Cursor.lockState = CursorLockMode.Locked;
 
     }
 

@@ -31,7 +31,7 @@ public class DialogueManagerQuiz : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-
+        Cursor.lockState = CursorLockMode.None;
         animator_D.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
@@ -89,7 +89,7 @@ public class DialogueManagerQuiz : MonoBehaviour
 
 
         EndQuiz();
-
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public void StartQuiz()

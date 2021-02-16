@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Dialogs/Dialog Scene.unity
-=======
 - path: Assets/Scena_Girone1/Scenes/Scena_Girone2.unity
->>>>>>> main
   isLoaded: 1
   isActive: 1
   isSubScene: 0
