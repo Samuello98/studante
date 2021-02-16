@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 51
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 3fa7057b325bf614695c506e4a0e792a, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 292ddfd3eaf40394d93770c57c60e2dd, type: 2}
 --- !u!1 &43324925
 GameObject:
   m_ObjectHideFlags: 0
@@ -7167,6 +7167,28 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8328928897281044072}
   m_PrefabAsset: {fileID: 0}
+--- !u!195 &919132148165976842
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148165976841}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1032252276557611398 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4296834522503011287, guid: 00ac13496e98fba4891c9eba73fc0aac,
@@ -7557,6 +7579,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8328928897180154599, guid: dcba900cff9c7474aa6c51a457e21353,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328928897180154617, guid: dcba900cff9c7474aa6c51a457e21353,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[6]
+      value: Forza, andiamo all'Inferno!
+      objectReference: {fileID: 0}
     - target: {fileID: 8328928897180154618, guid: dcba900cff9c7474aa6c51a457e21353,
         type: 3}
       propertyPath: ThePlayer
@@ -7566,6 +7598,16 @@ PrefabInstance:
         type: 3}
       propertyPath: FollowSpeed
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8328928897180154618, guid: dcba900cff9c7474aa6c51a457e21353,
+        type: 3}
+      propertyPath: TheNPC
+      value: 
+      objectReference: {fileID: 919132148165976842}
+    - target: {fileID: 8328928897180154620, guid: dcba900cff9c7474aa6c51a457e21353,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8366832452094613467, guid: dcba900cff9c7474aa6c51a457e21353,
         type: 3}
