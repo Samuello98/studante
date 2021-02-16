@@ -21,7 +21,7 @@ public class NPCFollow : MonoBehaviour
             TargetDistance = Shot.distance;
             if(TargetDistance >= AllowedDistance)
             {
-                FollowSpeed = 0.02f;
+                FollowSpeed = 0.015f;
                 animator.SetBool("walk", true);
                 transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, FollowSpeed);
             }

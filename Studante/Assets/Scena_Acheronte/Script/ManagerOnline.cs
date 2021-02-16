@@ -50,6 +50,7 @@ public class ManagerOnline : MonoBehaviour
             carCam.enabled = false;
             boatScript.enabled = false;
             player.transform.parent = null;
+
             player = null;
 
             StartCoroutine(Time(false));

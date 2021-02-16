@@ -27,6 +27,7 @@ public class machine_base : MonoBehaviour
     private Animator _animator;
     private bool chased = false;
     public GameObject target2;
+    private bool canvasNotActivated = true; 
 
     
     void Start()
@@ -34,6 +35,7 @@ public class machine_base : MonoBehaviour
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _currentGuardState = GuardState.Patrol;
         _animator = GetComponent<Animator>();
+        canvas.enabled = false;
 
 
     }
@@ -149,6 +151,11 @@ public class machine_base : MonoBehaviour
         if (chased)
         {
             yield return new WaitForSeconds(10f);
+            if (canvasNotActivated)
+            {
+                canvas.enabled = true;
+                canvasNotActivated = false;
+            }
             Virgilio.SetActive(true);
             _target = target2;
             StartCoroutine(ViaDialogo());
