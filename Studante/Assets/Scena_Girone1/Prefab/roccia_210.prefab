@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1734783255650854122}
   - component: {fileID: 3439883404958657359}
   - component: {fileID: 601262378902003589}
+  - component: {fileID: 8164036735352607199}
   m_Layer: 0
   m_Name: roccia_210
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394110936204000848}
-  m_LocalRotation: {x: -0.00000008146033, y: 0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -41.604137, y: 0.90120935, z: 6.486277}
   m_LocalScale: {x: 0.29443794, y: 0.29443794, z: 0.29443794}
   m_Children: []
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -3763351853183625756, guid: 5726d9c24fd4616408aab09ed922b18e, type: 3}
+  - {fileID: 2100000, guid: b6ade9782c2973e469d3baaabaebc54c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8164036735352607199
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394110936204000848}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6396084, y: 1.388829, z: 2.2061837}
+  m_Center: {x: -0.08538437, y: 0.016322585, z: -0.012445569}
