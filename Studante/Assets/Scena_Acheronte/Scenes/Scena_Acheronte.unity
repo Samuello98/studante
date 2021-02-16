@@ -2166,6 +2166,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1415026, y: 0.36155587, z: 2.070353}
   m_Center: {x: 0.27401575, y: -0.06924251, z: -0.075537086}
+--- !u!1 &913400342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6016147006843503684, guid: 52e04f2d5d9281e409fd9e91584ca5f8,
+    type: 3}
+  m_PrefabInstance: {fileID: 6898613040281458835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &913400347
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913400342}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: bc3182a8a82a0a0419cc3c69f3d935d2, type: 3}
+  m_Controller: {fileID: 9100000, guid: 99cd0c5f1ec3a69408d682a8c7b59cb0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &917802082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4844,6 +4869,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898613039726310304, guid: 52e04f2d5d9281e409fd9e91584ca5f8,
+        type: 3}
+      propertyPath: dialogue.name
+      value: Caronte
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e04f2d5d9281e409fd9e91584ca5f8, type: 3}
