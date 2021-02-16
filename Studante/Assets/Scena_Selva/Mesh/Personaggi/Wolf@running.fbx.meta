@@ -9,6 +9,9 @@ ModelImporter:
   - first:
       74: 8698345749389049681
     second: "wolf@running|\xA1\xA1\xD7\xFD\xD7\xFB001|Take 001|BaseLayer"
+  - first:
+      74: -1618165445352492719
+    second: wolf@running|wolf@running|wolf@running|Armature|Take 001|BaseLayer|wolf@runn
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -38,8 +41,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: running
-      takeName: wolf@running|Armature|Take 001|BaseLayer
+      name: wolf@running|wolf@running|wolf@running|Armature|Take 001|BaseLayer|wolf@runn
+      takeName: wolf@running|wolf@running|wolf@running|Armature|Take 001|BaseLayer|wolf@runn
       internalID: 0
       firstFrame: 0
       lastFrame: 20
