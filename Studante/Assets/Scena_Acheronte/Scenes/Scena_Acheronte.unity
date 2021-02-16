@@ -139,6 +139,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: dialogoMinosse
       objectReference: {fileID: 0}
+    - target: {fileID: 3441495932255299315, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3441495932255299327, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -262,7 +267,7 @@ PrefabInstance:
         loro accennando, tutte
         le raccoglie;
 
-        batte col remo qualunque s''adagia.111'
+        batte col remo qualunque s''adagia.'
       objectReference: {fileID: 0}
     - target: {fileID: 3441495933023729069, guid: ac1f186ac68f8b743ba86cedaeaadc96,
         type: 3}
@@ -1644,18 +1649,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84ceb5ec731c3324a99cfd1db1b421e3, type: 3}
---- !u!114 &447107046 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3441495932100826344, guid: ac1f186ac68f8b743ba86cedaeaadc96,
-    type: 3}
-  m_PrefabInstance: {fileID: 7041729}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &502714211
 GameObject:
   m_ObjectHideFlags: 0
@@ -4740,24 +4733,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1318450395 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3441495932350662389, guid: ac1f186ac68f8b743ba86cedaeaadc96,
-    type: 3}
-  m_PrefabInstance: {fileID: 7041729}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &1330223907 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3441495932266370659, guid: ac1f186ac68f8b743ba86cedaeaadc96,
-    type: 3}
-  m_PrefabInstance: {fileID: 7041729}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1387731226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5005,30 +4980,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425108450}
   m_CullTransparentMesh: 0
---- !u!114 &1470944992 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3441495932656481409, guid: ac1f186ac68f8b743ba86cedaeaadc96,
-    type: 3}
-  m_PrefabInstance: {fileID: 7041729}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1474863403 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3441495933641833633, guid: ac1f186ac68f8b743ba86cedaeaadc96,
-    type: 3}
-  m_PrefabInstance: {fileID: 7041729}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1504763968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7043484041455368304, guid: e9bba7d5f5a2a38439c7a3160dc29618,
@@ -5824,12 +5775,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 54.908, y: -34.668003, z: 58.029003}
---- !u!95 &1735565689 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3441495932088337350, guid: ac1f186ac68f8b743ba86cedaeaadc96,
-    type: 3}
-  m_PrefabInstance: {fileID: 7041729}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1765184571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6494,16 +6439,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e77dd663f197b7742b7bf1a9dd265220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator_D: {fileID: 1735565689}
-  animator_Q: {fileID: 1330223907}
+  animator_D: {fileID: 1986185949}
+  animator_Q: {fileID: 1986185948}
   isQuiz: 1
-  nameText: {fileID: 1899759521}
-  dialogueText: {fileID: 1318450395}
-  rightAnswer: {fileID: 1518552796}
-  wrongAnswer1: {fileID: 1470944992}
-  wrongAnswer2: {fileID: 447107046}
-  wrongAnswer3: {fileID: 1474863403}
-  button: {fileID: 1971769572}
+  nameText: {fileID: 1986185947}
+  dialogueText: {fileID: 1986185946}
+  rightAnswer: {fileID: 1986185945}
+  wrongAnswer1: {fileID: 1986185944}
+  wrongAnswer2: {fileID: 1986185943}
+  wrongAnswer3: {fileID: 1986185941}
+  button: {fileID: 1986185942}
   cubo: {fileID: 1311129667}
 --- !u!1 &1959467396
 GameObject:
@@ -6583,11 +6528,288 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1959467396}
   m_CullTransparentMesh: 0
---- !u!114 &1971769572 stripped
+--- !u!1001 &1986185940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6736598769345597385, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1947412038}
+    - target: {fileID: 6736598769345597385, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CorrectAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769447069195, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1947412038}
+    - target: {fileID: 6736598769447069195, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769647183517, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Caronte
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769731362558, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1947412038}
+    - target: {fileID: 6736598769731362558, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisplayNextSentence
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769968884758, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: "Caron, non ti crucciare:\r\nvuolsi cos\xEC col\xE0 dove si puote\r\nci\xF2
+        che si vuole, e pi\xF9 non dimandare\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769968884758, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769968884758, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598769994454417, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770149224882, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: "Bestemmiavano Dio e lor parenti,\r\nl\u2019umana spezie e \u2019l loco
+        e \u2019l tempo e \u2019l seme\r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770149224882, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770149224882, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770149224885, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -5.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770199997228, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1947412038}
+    - target: {fileID: 6736598770199997228, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770606094738, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Caron dimonio, con occhi di bragia
+
+        loro accennando, tutte
+        le raccoglie;
+
+        batte col remo qualunque s''adagia.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770606094738, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770606094738, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770842826942, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1947412038}
+    - target: {fileID: 6736598770842826942, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: WrongAnswer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770937456250, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Continua
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598770970610662, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990112, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Name
+      value: DialogoCaronte
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771161733627, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_Text
+      value: Quinci non passa mai anima buona
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771161733627, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771161733627, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 767c90fda77c40941af9c3bb778ef87d, type: 3}
+--- !u!114 &1986185941 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3441495934059680749, guid: ac1f186ac68f8b743ba86cedaeaadc96,
+  m_CorrespondingSourceObject: {fileID: 6736598770149224882, guid: 767c90fda77c40941af9c3bb778ef87d,
     type: 3}
-  m_PrefabInstance: {fileID: 7041729}
+  m_PrefabInstance: {fileID: 1986185940}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1986185942 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6736598769731362558, guid: 767c90fda77c40941af9c3bb778ef87d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1986185940}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -7692,6 +7914,17 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.name
       value: Caronte
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898613039726310304, guid: 52e04f2d5d9281e409fd9e91584ca5f8,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[4]
+      value: 'Cosa rispondi a Caronte per permetterti il passaggio? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 6898613039726310304, guid: 52e04f2d5d9281e409fd9e91584ca5f8,
+        type: 3}
+      propertyPath: dialogue.sentences.Array.data[3]
+      value: "ma...\xE8 vivo! Quante volte te lo devo dire, oh losco latino, che
+        solo i morti possono passare da qui!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52e04f2d5d9281e409fd9e91584ca5f8, type: 3}
