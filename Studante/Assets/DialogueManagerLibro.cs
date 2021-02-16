@@ -24,7 +24,7 @@ public class DialogueManagerLibro : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-
+        Cursor.lockState = CursorLockMode.None;
         animator_D.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
@@ -69,6 +69,7 @@ public class DialogueManagerLibro : MonoBehaviour
     public void EndDialogue()
     {
         animator_D.SetBool("IsOpen", false);
+        Cursor.lockState = CursorLockMode.Locked;
 
 
 
