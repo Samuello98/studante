@@ -6,17 +6,27 @@ public class TriggerOnline : MonoBehaviour
 {
 
     private bool inTrigger;
-    private GameObject player;
+    public GameObject player;
     public ManagerOnline carMan;
+    public Canvas canvas;
+
+    void Start()
+    {
+        canvas.enabled = false;
+    }
 
     void Update()
     {
         if (inTrigger == true)
+
         {
+            canvas.enabled = true;
             if (Input.GetKeyDown(KeyCode.E))
             {
+
                 carMan.vehicleControl(player);
                 inTrigger = false;
+                canvas.enabled = false;
             }
         }
     }
@@ -25,10 +35,12 @@ public class TriggerOnline : MonoBehaviour
     {
         inTrigger = true;
         player = col.gameObject;
+        canvas.enabled = true;
     }
     void OnTriggerExit()
     {
         inTrigger = false;
         player = null;
+        canvas.enabled = false;
     }
 }

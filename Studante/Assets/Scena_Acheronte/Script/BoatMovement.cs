@@ -5,95 +5,64 @@ using UnityEngine;
 
 public class BoatMovement : MonoBehaviour
 {
-    public Transform camera;
-    public Rigidbody rb;
+    public float mouseSensitivity = 3f;
+    public Transform playerBody;
+    public CharacterController controller;
+    public float speed = 12f;
+    public Animator animator;
 
-    //camera locked in minimum and maximum of the vertical axes
-    public float camRotationSpeed = 1f;
-    public float cameraMinimumY = -60f;
-    public float cameraMaximumY = 75f;
-    public float rotationSmoothSpeed = 10f;
 
-    public float walkSpeed = 9f;
-    public float runSpeed = 14f;
-    public float maxSpeed = 20f;
-    public float jumpPower = 30f;
+    float xRotation = 0f;
+    float yRotation = 90f;
 
-    //by default unity's system gravity is very slow
-    public float extraGravity = 45f;
 
-    float bodyRotationX;
-    float camRotationY;
-    Vector3 directionIntentX;
-    Vector3 directionIntentY;
-    float speed;
 
     void Start()
     {
-        startMovement();
+        Cursor.lockState = CursorLockMode.Locked;
+        yRotation = playerBody.localEulerAngles.y;
     }
     void Update()
     {
-        LookRotation();
+        Rotation();
         Movement();
 
 
     }
-    void startMovement()
-    {
-       Debug.Log("Boats' n Hoes ");
-    }
-
-    void LookRotation()
-    {
-        //lock the cursor and hide 
-        //Cursor.visible = false;
-        //Cursor.lockState = CursorLockMode.Locked;
-
-        //Get camera and body rotational values
-        bodyRotationX += Input.GetAxis("Mouse X") * camRotationSpeed;
-        camRotationY += Input.GetAxis("Mouse Y") * camRotationSpeed;
-
-        //Stop our camera from rotating 
-       camRotationY = Mathf.Clamp(camRotationY, cameraMinimumY, cameraMaximumY);
-
-        //create rotation and handle rotation of the body of the camera
-        Quaternion camTargetRotation = Quaternion.Euler(-camRotationY, 0, 0);
-        Quaternion bodyTargetRotation = Quaternion.Euler(0, bodyRotationX, 0);
-
-        //handle rotations 
-        //transform.rotation = Quaternion.Lerp(transform.rotation, bodyTargetRotation, Time.deltaTime * rotationSmoothSpeed);
-        //camera.localRotation = Quaternion.Lerp(camera.localRotation, camTargetRotation, Time.deltaTime * rotationSmoothSpeed);
-
-    }
-
-
     void Movement()
     {
-        //movement direction have to match our camera forward direction
-        directionIntentX = camera.right;
-        directionIntentX.y = 0;
-        directionIntentX.Normalize();
+        float x = Input.GetAxis("Horizontal");
+        float z = Input.GetAxis("Vertical");
 
-        directionIntentY = camera.forward;
-        directionIntentY.y = 0;
-        directionIntentY.Normalize();
+        Vector3 move = (transform.right * x + transform.forward * z).normalized;
 
-        //change velocity in this direction 
-        rb.velocity = directionIntentY * Input.GetAxis("Vertical") * speed + directionIntentX * Input.GetAxis("Horizontal") * speed + Vector3.up * rb.velocity.y;
-        rb.velocity = Vector3.ClampMagnitude(rb.velocity, maxSpeed);
-        //control speed based on our movement state!
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (x == 0 && z == 0)
         {
-            speed = runSpeed;
+            animator.SetBool("isMoving", false);
+        }
+        else
+        {
+            animator.SetBool("isMoving", true);
         }
 
-        if (!Input.GetKey(KeyCode.LeftShift))
-        {
-            speed = walkSpeed;
-        }
+        controller.Move(move * speed * Time.deltaTime);
     }
+    void Rotation()
+    {
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
+        Debug.Log("valore mouseX: " + mouseX);
+
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+        Debug.Log("valore mouseY: " + mouseY);
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+
+        playerBody.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+        transform.Rotate(Vector3.up, mouseX);
+        //playerBody.Rotate(playerBody.transform.right * xRotation);
+    }
+
 
 
 
