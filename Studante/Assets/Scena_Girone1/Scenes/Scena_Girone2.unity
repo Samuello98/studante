@@ -4385,6 +4385,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8328928897180154599, guid: dcba900cff9c7474aa6c51a457e21353,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8328928897180154616, guid: dcba900cff9c7474aa6c51a457e21353,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5023,7 +5028,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 529845dbc202f034ea86a34e9abeb24d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -46.74
+      value: -46.99
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 529845dbc202f034ea86a34e9abeb24d,
         type: 3}
@@ -5033,7 +5038,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 529845dbc202f034ea86a34e9abeb24d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.007
+      value: 5.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 529845dbc202f034ea86a34e9abeb24d,
         type: 3}
@@ -6739,7 +6744,7 @@ PrefabInstance:
     - target: {fileID: 3230672855657091346, guid: 26a6c5026ac41ad47936207bd6ecb623,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4023222620787814599, guid: 26a6c5026ac41ad47936207bd6ecb623,
         type: 3}
