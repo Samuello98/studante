@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6689943041556730115}
   - component: {fileID: 7744124642718834342}
   - component: {fileID: 5520391821199026796}
+  - component: {fileID: -3786250423854249614}
   m_Layer: 0
   m_Name: tronco_1
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-3786250423854249614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6313100465225960377}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.9816272, y: 0.8273954, z: 1.0012575}
+  m_Center: {x: 0.03252387, y: 0.40916607, z: 0.10571873}

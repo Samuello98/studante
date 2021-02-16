@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1043803190210047777}
   - component: {fileID: 4166831232462397572}
   - component: {fileID: 2177342691010696270}
+  - component: {fileID: -1465605228449435451}
   m_Layer: 0
   m_Name: roccia_grande_1
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-1465605228449435451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375916239577675163}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3948927, y: 4.0651236, z: 2.201871}
+  m_Center: {x: -0.011133969, y: 2.021286, z: -0.043103456}

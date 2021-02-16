@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7923479886775126348}
   - component: {fileID: 6510517788679866089}
   - component: {fileID: 9060950146206986787}
+  - component: {fileID: -1843496109943013173}
   m_Layer: 0
   m_Name: roccia_4
   m_TagString: Untagged
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &-1843496109943013173
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403366204588381174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2107542471655444770, guid: 375de6756f888fd49a396a03c5df145f, type: 3}

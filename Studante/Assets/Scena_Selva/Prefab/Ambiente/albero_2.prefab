@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6533698336044047983}
   - component: {fileID: 7855271228741276106}
   - component: {fileID: 5397406758579250432}
+  - component: {fileID: 8316286877029167374}
   m_Layer: 0
   m_Name: albero_2
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &8316286877029167374
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5901840496850306261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5428913, y: 4.6578546, z: 1.4288657}
+  m_Center: {x: -0.015585393, y: 2.3289273, z: 0.1653476}

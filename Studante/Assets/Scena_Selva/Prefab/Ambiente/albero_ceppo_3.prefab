@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8091215706047330129}
   - component: {fileID: 5180861705421076724}
   - component: {fileID: 6918348217022991422}
+  - component: {fileID: -960149290217301314}
   m_Layer: 0
   m_Name: albero_ceppo_3
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-960149290217301314
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8863670640326176235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.9093963, y: 1.5796596, z: 0.97968256}
+  m_Center: {x: -0.06025511, y: 0.7703517, z: -0.20064218}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8000634733079238169}
   - component: {fileID: 6388406046806251964}
   - component: {fileID: 9172946484340518262}
+  - component: {fileID: -7859247190691905980}
   m_Layer: 0
   m_Name: albero_secco_3
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &-7859247190691905980
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7227193601567444131}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0598726, y: 2.9074354, z: 1.7400843}
+  m_Center: {x: 0.02386877, y: 1.4342396, z: -0.12838405}
