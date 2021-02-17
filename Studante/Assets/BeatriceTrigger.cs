@@ -6,10 +6,16 @@ public class BeatriceTrigger : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject Beatricedue;
+    public bool triggered = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        Beatricedue.SetActive(true);
+        if (triggered == false)
+        {
+            Beatricedue.SetActive(true);
+            triggered = true;
+
+        }
     }
 
 }

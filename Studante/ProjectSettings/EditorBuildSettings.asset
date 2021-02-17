@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scena_Selva/Scenes/ScenaSelva.unity
+    guid: ceaf047e25cb0a04c9352734359a1605
+  - enabled: 1
+    path: Assets/Scena_Acheronte/Scenes/Scena_Acheronte.unity
+    guid: 0323d775a55b34d47b237d7fe7fbaf9e
+  - enabled: 1
+    path: Assets/Scena_Girone1/Scenes/Scena_Girone2.unity
+    guid: 31333867a55a4e346841d5efbf0473ea
   m_configObjects: {}
