@@ -13,6 +13,16 @@ public class NPCFollow : MonoBehaviour
     public RaycastHit Shot;
     public Animator animator;
    
+    
+    
+    AudioSource audio;
+
+    private void Start()
+    {
+    audio = GetComponent<AudioSource>();
+    }
+
+     
 
     private void Update()
     {
@@ -20,16 +30,22 @@ public class NPCFollow : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Shot))
         {
             TargetDistance = Shot.distance;
-            if(TargetDistance >= AllowedDistance)
+            if (TargetDistance >= AllowedDistance)
             {
                 FollowSpeed = 0.02f;
                 animator.SetBool("walk", true);
                 transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, FollowSpeed);
+
+                audio.mute = false;
+                
             }
             else
             {
                 FollowSpeed = 0;
                 animator.SetBool("walk", false);
+
+                audio.mute = true;
+                
             }
         }
     }

@@ -31,6 +31,8 @@ public class OpenBook : MonoBehaviour
         Time.timeScale = 1f;
         BookIsOpen = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        FindObjectOfType<AudioManager>().Play("Book");
     }
 
     void Pause()
@@ -40,5 +42,7 @@ public class OpenBook : MonoBehaviour
         Time.timeScale = 0f;
         BookIsOpen = true;
         Cursor.lockState = CursorLockMode.None;
+
+        FindObjectOfType<AudioManager>().Play("Book");
     }
 }
