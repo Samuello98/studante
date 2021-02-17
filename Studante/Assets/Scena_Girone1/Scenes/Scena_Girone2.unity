@@ -140,6 +140,213 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 1409276744}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &156091940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6620838489366663616, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_Name
+      value: MenuPausaPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663619, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838489366663644, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6620838490274690839, guid: 8a8612545704288449ee492b8b4b4d34,
+        type: 3}
+      propertyPath: m_Text
+      value: "\t\t\n\t\t INFERNO - CANTO V\n\n\tCos\xEC discesi del cerchio primaio\r\ngi\xF9
+        nel secondo, che men loco cinghia\r\ne tanto pi\xF9 dolor, che punge a guaio.3\r\n\r\nStavvi
+        Min\xF2s orribilmente, e ringhia:\r\nessamina le colpe ne l\u2019intrata;\r\ngiudica
+        e manda secondo ch\u2019avvinghia.6\r\n\r\nDico che quando l\u2019anima mal
+        nata\r\nli vien dinanzi, tutta si confessa;\r\ne quel conoscitor de le peccata9\r\n\r\nvede
+        qual loco d\u2019inferno \xE8 da essa;\r\ncignesi con la coda tante volte\r\nquantunque
+        gradi vuol che gi\xF9 sia messa.12\r\n\r\nSempre dinanzi a lui ne stanno
+        molte:\r\nvanno a vicenda ciascuna al giudizio,\r\ndicono e odono e poi son
+        gi\xF9 volte.15\r\n\r\n\"O tu che vieni al doloroso ospizio\",\r\ndisse Min\xF2s
+        a me quando mi vide,\r\nlasciando l\u2019atto di cotanto offizio,18\r\n\r\n\"guarda
+        com\u2019entri e di cui tu ti fide;\r\nnon t\u2019inganni l\u2019ampiezza
+        de l\u2019intrare!\".\r\nE \u2019l duca mio a lui: \"Perch\xE9 pur gride?21\r\n\r\nNon
+        impedir lo suo fatale andare:\r\nvuolsi cos\xEC col\xE0 dove si puote\r\nci\xF2
+        che si vuole, e pi\xF9 non dimandare\".24\r\n\r\nOr incomincian le dolenti
+        note\r\na farmisi sentire; or son venuto\r\nl\xE0 dove molto pianto mi percuote.27\r\n\r\nIo
+        venni in loco d\u2019ogne luce muto,\r\nche mugghia come fa mar per tempesta,\r\nse
+        da contrari venti \xE8 combattuto.30\r\n\r\nLa bufera infernal, che mai non
+        resta,\r\nmena li spirti con la sua rapina;\r\nvoltando e percotendo li molesta.33\r\n\r\nQuando
+        giungon davanti a la ruina,\r\nquivi le strida, il compianto, il lamento;\r\nbestemmian
+        quivi la virt\xF9 divina.36\r\n\r\nIntesi ch\u2019a cos\xEC fatto tormento\r\nenno
+        dannati i peccator carnali,\r\nche la ragion sommettono al talento.39\r\n\r\nE
+        come li stornei ne portan l\u2019ali\r\nnel freddo tempo, a schiera larga
+        e piena,\r\ncos\xEC quel fiato li spiriti mali42\r\n\r\ndi qua, di l\xE0,
+        di gi\xF9, di s\xF9 li mena;\r\nnulla speranza li conforta mai,\r\nnon che
+        di posa, ma di minor pena.45\r\n\r\nE come i gru van cantando lor lai,\r\nfaccendo
+        in aere di s\xE9 lunga riga,\r\ncos\xEC vid\u2019io venir, traendo guai,48\r\n\r\nombre
+        portate da la detta briga;\r\nper ch\u2019i\u2019 dissi: \"Maestro, chi son
+        quelle\r\ngenti che l\u2019aura nera s\xEC gastiga?\".51\r\n\r\n\"La prima
+        di color di cui novelle\r\ntu vuo' saper\", mi disse quelli allotta,\r\n\"fu
+        imperadrice di molte favelle.54\r\n\r\nA vizio di lussuria fu s\xEC rotta,\r\nche
+        libito f\xE9 licito in sua legge,\r\nper t\xF2rre il biasmo in che era condotta.57\r\n\r\nEll\u2019\xE8
+        Semiram\xECs, di cui si legge\r\nche succedette a Nino e fu sua sposa:\r\ntenne
+        la terra che \u2019l Soldan corregge.60\r\n\r\nL\u2019altra \xE8 colei che
+        s\u2019ancise amorosa,\r\ne ruppe fede al cener di Sicheo;\r\npoi \xE8 Cleopatr\xE0s
+        lussur\xEFosa.63\r\n\r\nElena vedi, per cui tanto reo\r\ntempo si volse,
+        e vedi \u2019l grande Achille,\r\nche con amore al fine combatteo.66\r\n\r\nVedi
+        Par\xECs, Tristano\"; e pi\xF9 di mille\r\nombre mostrommi e nominommi a
+        dito,\r\nch\u2019amor di nostra vita dipartille.69\r\n\r\nPoscia ch\u2019io
+        ebbi \u2019l mio dottore udito\r\nnomar le donne antiche e \u2019 cavalieri,\r\npiet\xE0
+        mi giunse, e fui quasi smarrito.72\r\n\r\nI\u2019 cominciai: \"Poeta, volontieri\r\nparlerei
+        a quei due che \u2019nsieme vanno,\r\ne paion s\xEC al vento esser leggeri\".75\r\n\r\nEd
+        elli a me: \"Vedrai quando saranno\r\npi\xF9 presso a noi; e tu allor li
+        priega\r\nper quello amor che i mena, ed ei verranno\".78\r\n\r\nS\xEC tosto
+        come il vento a noi li piega,\r\nmossi la voce: \"O anime affannate,\r\nvenite
+        a noi parlar, s\u2019altri nol niega!\".81\r\n\r\nQuali colombe dal disio
+        chiamate\r\ncon l\u2019ali alzate e ferme al dolce nido\r\nvegnon per l\u2019aere,
+        dal voler portate;84\r\n\r\ncotali uscir de la schiera ov\u2019\xE8 Dido,\r\na
+        noi venendo per l\u2019aere maligno,\r\ns\xEC forte fu l\u2019affett\xFCoso
+        grido.87\r\n\r\n\"O animal graz\xEFoso e benigno\r\nche visitando vai per
+        l\u2019aere perso\r\nnoi che tignemmo il mondo di sanguigno,90\r\n\r\nse
+        fosse amico il re de l\u2019universo,\r\nnoi pregheremmo lui de la tua pace,\r\npoi
+        c\u2019 hai piet\xE0 del nostro mal perverso.93\r\n\r\nDi quel che udire
+        e che parlar vi piace,\r\nnoi udiremo e parleremo a voi,\r\nmentre che \u2019l
+        vento, come fa, ci tace.96\r\n\r\nSiede la terra dove nata fui\r\nsu la marina
+        dove \u2019l Po discende\r\nper aver pace co\u2019 seguaci sui.99\r\n\r\nAmor,
+        ch'al cor gentil ratto s'apprende,\r\nprese costui de la bella persona\r\nche
+        mi fu tolta; e 'l modo ancor m'offende.102\r\n\r\nAmor, ch\u2019a nullo amato
+        amar perdona,\r\nmi prese del costui piacer s\xEC forte,\r\nche, come vedi,
+        ancor non m\u2019abbandona.105\r\n\r\nAmor condusse noi ad una morte.\r\nCaina
+        attende chi a vita ci spense\".\r\nQueste parole da lor ci fuor porte.108\r\n\r\nQuand\u2019io
+        intesi quell\u2019anime offense,\r\nchina\u2019 il viso, e tanto il tenni
+        basso,\r\nfin che \u2019l poeta mi disse: \"Che pense?\".111\r\n\r\nQuando
+        rispuosi, cominciai: \"Oh lasso,\r\nquanti dolci pensier, quanto disio\r\nmen\xF2
+        costoro al doloroso passo!\".114\r\n\r\nPoi mi rivolsi a loro e parla\u2019
+        io,\r\ne cominciai: \"Francesca, i tuoi mart\xECri\r\na lagrimar mi fanno
+        tristo e pio.117\r\n\r\nMa dimmi: al tempo d\u2019i dolci sospiri,\r\na che
+        e come concedette amore\r\nche conosceste i dubbiosi disiri?\".120\r\n\r\nE
+        quella a me: \"Nessun maggior dolore\r\nche ricordarsi del tempo felice\r\nne
+        la miseria; e ci\xF2 sa 'l tuo dottore.123\r\n\r\nMa s\u2019a conoscer la
+        prima radice\r\ndel nostro amor tu hai cotanto affetto,\r\ndir\xF2 come colui
+        che piange e dice.126\r\n\r\nNoi leggiavamo un giorno per diletto\r\ndi Lancialotto
+        come amor lo strinse;\r\nsoli eravamo e sanza alcun sospetto.129\r\n\r\nPer
+        pi\xF9 f\xEFate li occhi ci sospinse\r\nquella lettura, e scolorocci il viso;\r\nma
+        solo un punto fu quel che ci vinse.132\r\n\r\nQuando leggemmo il dis\xEFato
+        riso\r\nesser basciato da cotanto amante,\r\nquesti, che mai da me non fia
+        diviso,135\r\n\r\nla bocca mi basci\xF2 tutto tremante.\r\nGaleotto fu \u2019l
+        libro e chi lo scrisse:\r\nquel giorno pi\xF9 non vi leggemmo avante\".138\r\n\r\nMentre
+        che l'uno spirto questo disse,\r\nl'altro piang\xEBa; s\xEC che di pietade\r\nio
+        venni men cos\xEC com'io morisse.141\r\n\r\nE caddi come corpo morto cade.\r\n\r\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8a8612545704288449ee492b8b4b4d34, type: 3}
 --- !u!1001 &180251989
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -421,7 +628,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &278909068
 GameObject:
@@ -469,7 +676,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &336598211
 PrefabInstance:
@@ -598,7 +805,7 @@ Transform:
   - {fileID: 1752584156}
   - {fileID: 450821845}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &450821844
 PrefabInstance:
@@ -1080,7 +1287,7 @@ Transform:
   m_LocalScale: {x: 1.7560879, y: 7.0243516, z: 7.0243516}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &637230128 stripped
 GameObject:
@@ -1240,7 +1447,7 @@ Transform:
   - {fileID: 1513172555}
   - {fileID: 1815428985}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &685323884 stripped
 Animator:
@@ -1335,7 +1542,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704988869
 GameObject:
@@ -2295,7 +2502,7 @@ PrefabInstance:
     - target: {fileID: 7950229221909746922, guid: cd91afabc945850429cd29bc93bec0b9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7950229221909746922, guid: cd91afabc945850429cd29bc93bec0b9,
         type: 3}
@@ -2508,7 +2715,7 @@ RectTransform:
   m_Children:
   - {fileID: 704988870}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3083,7 +3290,7 @@ PrefabInstance:
     - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
@@ -3484,7 +3691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 458636, guid: d18380a6098943a4a879b5a0f3826c9d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3659,6 +3866,156 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d18380a6098943a4a879b5a0f3826c9d, type: 3}
+--- !u!1001 &1658778059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 909099520512897472, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 7.1452723
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520512897472, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.60317
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520512897472, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4.2251215
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520512897473, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 80567408093204a4e8d5967d39588888,
+        type: 3}
+    - target: {fileID: 909099520733796390, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099520733796411, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_Name
+      value: Beatrice
+      objectReference: {fileID: 0}
+    - target: {fileID: 909099521878230208, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -220
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4cf5340b3bdafec4eb24a58729f0199f, type: 3}
 --- !u!1 &1664295108
 GameObject:
   m_ObjectHideFlags: 0
@@ -3705,7 +4062,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1709962809
 PrefabInstance:
@@ -4086,7 +4443,7 @@ PrefabInstance:
     - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
@@ -4438,7 +4795,7 @@ PrefabInstance:
     - target: {fileID: 8366832452094613467, guid: dcba900cff9c7474aa6c51a457e21353,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8366832452094613467, guid: dcba900cff9c7474aa6c51a457e21353,
         type: 3}
@@ -4532,7 +4889,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1836376352 stripped
 Animator:
@@ -4758,7 +5115,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1934719035 stripped
 Animator:
@@ -4901,7 +5258,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 077eec9768e2fe84eac90e6c1376f1db,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 077eec9768e2fe84eac90e6c1376f1db,
         type: 3}
@@ -4995,7 +5352,7 @@ Transform:
   - {fileID: 1709962810}
   - {fileID: 2085155495}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -96.134, z: 0}
 --- !u!4 &1996619863 stripped
 Transform:
@@ -5063,7 +5420,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 529845dbc202f034ea86a34e9abeb24d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 529845dbc202f034ea86a34e9abeb24d,
         type: 3}
@@ -5459,7 +5816,7 @@ Transform:
   m_LocalScale: {x: 32.393288, y: 0.77785, z: 26.962223}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2033756708
 MonoBehaviour:
@@ -5913,7 +6270,7 @@ PrefabInstance:
     - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6736598771065990124, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
@@ -5979,6 +6336,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990127, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_PixelPerfect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990127, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6736598771065990127, guid: 767c90fda77c40941af9c3bb778ef87d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6736598771161733627, guid: 767c90fda77c40941af9c3bb778ef87d,
         type: 3}
@@ -6719,7 +7091,7 @@ PrefabInstance:
     - target: {fileID: 2854850557930130344, guid: 26a6c5026ac41ad47936207bd6ecb623,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2854850557930130344, guid: 26a6c5026ac41ad47936207bd6ecb623,
         type: 3}

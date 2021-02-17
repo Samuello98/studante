@@ -7,6 +7,8 @@ public class TriggerInferno : MonoBehaviour
     // Start is called before the first frame update
     private bool triggered = false;
     public Dialogue dialogue;
+    public GameObject cantouno;
+    public GameObject cantotre;
 
     // Update is called once per frame
     private void OnTriggerEnter(Collider other)
@@ -15,6 +17,8 @@ public class TriggerInferno : MonoBehaviour
         {
             triggered = true;
             TriggerDialogue();
+            cantouno.SetActive(false);
+            cantotre.SetActive(true);
         }
     }public void TriggerDialogue()
     {

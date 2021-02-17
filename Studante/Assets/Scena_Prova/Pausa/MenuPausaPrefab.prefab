@@ -1,0 +1,737 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6620838489366663616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838489366663644}
+  - component: {fileID: 6620838489366663619}
+  - component: {fileID: 6620838489366663618}
+  - component: {fileID: 6620838489366663617}
+  - component: {fileID: 6620838489366663645}
+  m_Layer: 5
+  m_Name: MenuPausaPrefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6620838489366663644
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489366663616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 6620838490099225463}
+  - {fileID: 6620838491376349931}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!223 &6620838489366663619
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489366663616}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 1
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &6620838489366663618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489366663616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &6620838489366663617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489366663616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &6620838489366663645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489366663616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db192ccc65793734bb4052ecf3cb3ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BookUI: {fileID: 6620838490099225462}
+  AltroDaAttivare: {fileID: 6620838491376349930}
+--- !u!1 &6620838489938972600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838489938972601}
+  - component: {fileID: 6620838489938972596}
+  - component: {fileID: 6620838489938972603}
+  - component: {fileID: 6620838489938972602}
+  m_Layer: 5
+  m_Name: Scrollbar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6620838489938972601
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489938972600}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6620838490676940236}
+  m_Father: {fileID: 6620838490867151045}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 301, y: 0.0019913}
+  m_SizeDelta: {x: 20, y: 413.036}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6620838489938972596
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489938972600}
+  m_CullTransparentMesh: 0
+--- !u!114 &6620838489938972603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489938972600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6620838489938972602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838489938972600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 6620838490416965533}
+  m_HandleRect: {fileID: 6620838490416965532}
+  m_Direction: 2
+  m_Value: 0.9999893
+  m_Size: 0.14042565
+  m_NumberOfSteps: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &6620838490099225462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838490099225463}
+  - component: {fileID: 6620838490099225457}
+  - component: {fileID: 6620838490099225456}
+  m_Layer: 5
+  m_Name: Book
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6620838490099225463
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490099225462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6620838489366663644}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.00015258789, y: 0}
+  m_SizeDelta: {x: 0.00030517578, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6620838490099225457
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490099225462}
+  m_CullTransparentMesh: 0
+--- !u!114 &6620838490099225456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490099225462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.23921569}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6620838490274690837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838490274690838}
+  - component: {fileID: 6620838490274690832}
+  - component: {fileID: 6620838490274690839}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6620838490274690838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490274690837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6620838490867151045}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0054688, y: -1264.1}
+  m_SizeDelta: {x: 524.3987, y: 2941.2864}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6620838490274690832
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490274690837}
+  m_CullTransparentMesh: 0
+--- !u!114 &6620838490274690839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490274690837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\t\t\n\t\t  INFERNO - CANTO I\n\n\tNel mezzo del cammin di nostra vita\r\nmi
+    ritrovai per una selva oscura,\r\nch\xE9 la diritta via era smarrita. 3\r\n\r\nAhi
+    quanto a dir qual era \xE8 cosa dura\r\nesta selva selvaggia e aspra e forte\r\nche
+    nel pensier rinova la paura! 6\r\n\r\nTant\u2019\xE8 amara che poco \xE8 pi\xF9
+    morte;\r\nma per trattar del ben ch\u2019i\u2019 vi trovai,\r\ndir\xF2 de l\u2019altre
+    cose ch\u2019i\u2019 v\u2019 ho scorte. 9\r\n\r\nIo non so ben ridir com\u2019i\u2019
+    v\u2019intrai,\r\ntant\u2019era pien di sonno a quel punto\r\nche la verace via
+    abbandonai. 12\r\n\r\nMa poi ch\u2019i\u2019 fui al pi\xE8 d\u2019un colle giunto,\r\nl\xE0
+    dove terminava quella valle\r\nche m\u2019avea di paura il cor compunto, 15\r\n\r\nguardai
+    in alto e vidi le sue spalle\r\nvestite gi\xE0 de\u2019 raggi del pianeta\r\nche
+    mena dritto altrui per ogne calle. 18\r\n\r\nAllor fu la paura un poco queta,\r\nche
+    nel lago del cor m\u2019era durata\r\nla notte ch\u2019i\u2019 passai con tanta
+    pieta. 21\r\n\r\nE come quei che con lena affannata,\r\nuscito fuor del pelago
+    a la riva,\r\nsi volge a l\u2019acqua perigliosa e guata, 24\r\n\r\ncos\xEC l\u2019animo
+    mio, ch\u2019ancor fuggiva,\r\nsi volse a retro a rimirar lo passo\r\nche non
+    lasci\xF2 gi\xE0 mai persona viva. 27\r\n\r\nPoi ch\u2019\xE8i posato un poco
+    il corpo lasso,\r\nripresi via per la piaggia diserta,\r\ns\xEC che \u2019l pi\xE8
+    fermo sempre era \u2019l pi\xF9 basso. 30\r\n\r\nEd ecco, quasi al cominciar
+    de l'erta,\r\nuna lonza leggera e presta molto,\r\nche di pel macolato era coverta;
+    33\r\n\r\ne non mi si partia dinanzi al volto,\r\nanzi \u2019mpediva tanto il
+    mio cammino,\r\nch\u2019i\u2019 fui per ritornar pi\xF9 volte v\xF2lto. 36\r\n\r\nTemp\u2019era
+    dal principio del mattino,\r\ne \u2019l sol montava \u2019n s\xF9 con quelle
+    stelle\r\nch\u2019eran con lui quando l\u2019amor divino 39\r\n\r\nmosse di prima
+    quelle cose belle;\r\ns\xEC ch\u2019a bene sperar m\u2019era cagione\r\ndi quella
+    fiera a la gaetta pelle 42\r\n\r\nl\u2019ora del tempo e la dolce stagione;\r\nma
+    non s\xEC che paura non mi desse\r\nla vista che m'apparve d'un leone. 45\r\n\r\nQuesti
+    parea che contra me venisse\r\ncon la test\u2019alta e con rabbiosa fame,\r\ns\xEC
+    che parea che l\u2019aere ne tremesse. 48\r\n\r\nEd una lupa, che di tutte brame\r\nsembiava
+    carca ne la sua magrezza,\r\ne molte genti f\xE9 gi\xE0 viver grame, 51\r\n\r\nquesta
+    mi porse tanto di gravezza\r\ncon la paura ch\u2019uscia di sua vista,\r\nch\u2019io
+    perdei la speranza de l\u2019altezza. 54\r\n\r\nE qual \xE8 quei che volontieri
+    acquista,\r\ne giugne \u2019l tempo che perder lo face,\r\nche \u2019n tutti
+    suoi pensier piange e s\u2019attrista; 57\r\n\r\ntal mi fece la bestia sanza
+    pace,\r\nche, venendomi \u2019ncontro, a poco a poco\r\nmi ripigneva l\xE0 dove
+    \u2019l sol tace. 60\r\n\r\nMentre ch\u2019i\u2019 rovinava in basso loco,\r\ndinanzi
+    a li occhi mi si fu offerto\r\nchi per lungo silenzio parea fioco. 63\r\n\r\nQuando
+    vidi costui nel gran diserto,\r\n\"Miserere di me\", gridai a lui,\r\n\"qual
+    che tu sii, od ombra od omo certo!\". 66\r\n\r\nRispuosemi: \"Non omo, omo gi\xE0
+    fui,\r\ne li parenti miei furon lombardi,\r\nmantoani per patr\xEFa ambedui.
+    69\r\n\r\nNacqui sub Iulio, ancor che fosse tardi,\r\ne vissi a Roma sotto \u2019l
+    buono Augusto\r\nnel tempo de li d\xE8i falsi e bugiardi. 72\r\n\r\nPoeta fui,
+    e cantai di quel giusto\r\nfigliuol d\u2019Anchise che venne di Troia,\r\npoi
+    che \u2019l superbo Il\xEF\xF3n fu combusto. 75\r\n\r\nMa tu perch\xE9 ritorni
+    a tanta noia?\r\nperch\xE9 non sali il dilettoso monte\r\nch\u2019\xE8 principio
+    e cagion di tutta gioia?\". 78\r\n\r\n\"Or se\u2019 tu quel Virgilio e quella
+    fonte\r\nche spandi di parlar s\xEC largo fiume?\",\r\nrispuos\u2019io lui con
+    vergognosa fronte. 81\r\n\r\n\"O de li altri poeti onore e lume,\r\nvagliami
+    \u2019l lungo studio e \u2019l grande amore\r\nche m\u2019 ha fatto cercar lo
+    tuo volume. 84\r\n\r\nTu se\u2019 lo mio maestro e \u2019l mio autore,\r\ntu
+    se\u2019 solo colui da cu\u2019 io tolsi\r\nlo bello stilo che m\u2019 ha fatto
+    onore. 87\r\n\r\nVedi la bestia per cu\u2019 io mi volsi;\r\naiutami da lei,
+    famoso saggio,\r\nch\u2019ella mi fa tremar le vene e i polsi\". 90\r\n\r\n\"A
+    te convien tenere altro v\xEFaggio\",\r\nrispuose, poi che lagrimar mi vide,\r\n\"se
+    vuo\u2019 campar d\u2019esto loco selvaggio; 93\r\n\r\nch\xE9 questa bestia,
+    per la qual tu gride,\r\nnon lascia altrui passar per la sua via,\r\nma tanto
+    lo \u2019mpedisce che l\u2019uccide; 96\r\n\r\ne ha natura s\xEC malvagia e ria,\r\nche
+    mai non empie la bramosa voglia,\r\ne dopo \u2019l pasto ha pi\xF9 fame che pria.
+    99\r\n\r\nMolti son li animali a cui s\u2019ammoglia,\r\ne pi\xF9 saranno ancora,
+    infin che \u2019l veltro\r\nverr\xE0, che la far\xE0 morir con doglia. 102\r\n\r\nQuesti
+    non ciber\xE0 terra n\xE9 peltro,\r\nma sap\xEFenza, amore e virtute,\r\ne sua
+    nazion sar\xE0 tra feltro e feltro. 105\r\n\r\nDi quella umile Italia fia salute\r\nper
+    cui mor\xEC la vergine Cammilla,\r\nEurialo e Turno e Niso di ferute. 108\r\n\r\nQuesti
+    la caccer\xE0 per ogne villa,\r\nfin che l\u2019avr\xE0 rimessa ne lo \u2019nferno,\r\nl\xE0
+    onde \u2019nvidia prima dipartilla. 111\r\n\r\nOnd\u2019io per lo tuo me\u2019
+    penso e discerno\r\nche tu mi segui, e io sar\xF2 tua guida,\r\ne trarrotti di
+    qui per loco etterno; 114\r\n\r\nove udirai le disperate strida,\r\nvedrai li
+    antichi spiriti dolenti,\r\nch\u2019a la seconda morte ciascun grida; 117\r\n\r\ne
+    vederai color che son contenti\r\nnel foco, perch\xE9 speran di venire\r\nquando
+    che sia a le beate genti. 120\r\n\r\nA le quai poi se tu vorrai salire,\r\nanima
+    fia a ci\xF2 pi\xF9 di me degna:\r\ncon lei ti lascer\xF2 nel mio partire; 123\r\n\r\nch\xE9
+    quello imperador che l\xE0 s\xF9 regna,\r\nperch\u2019i\u2019 fu\u2019 ribellante
+    a la sua legge,\r\nnon vuol che \u2019n sua citt\xE0 per me si vegna. 126\r\n\r\nIn
+    tutte parti impera e quivi regge;\r\nquivi \xE8 la sua citt\xE0 e l\u2019alto
+    seggio:\r\noh felice colui cu\u2019 ivi elegge!\". 129\r\n\r\nE io a lui: \"Poeta,
+    io ti richeggio\r\nper quello Dio che tu non conoscesti,\r\nacci\xF2 ch\u2019io
+    fugga questo male e peggio, 132\r\n\r\nche tu mi meni l\xE0 dov\u2019or dicesti,\r\ns\xEC
+    ch\u2019io veggia la porta di san Pietro\r\ne color cui tu fai cotanto mesti\".
+    135\r\n\r\nAllor si mosse, e io li tenni dietro."
+--- !u!1 &6620838490416965507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838490416965532}
+  - component: {fileID: 6620838490416965534}
+  - component: {fileID: 6620838490416965533}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6620838490416965532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490416965507}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6620838490676940236}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.85956514}
+  m_AnchorMax: {x: 1, y: 0.9999908}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6620838490416965534
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490416965507}
+  m_CullTransparentMesh: 0
+--- !u!114 &6620838490416965533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490416965507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6620838490676940211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838490676940236}
+  m_Layer: 5
+  m_Name: Sliding Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6620838490676940236
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490676940211}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6620838490416965532}
+  m_Father: {fileID: 6620838489938972601}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &6620838490867151044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838490867151045}
+  - component: {fileID: 6620838490867151046}
+  m_Layer: 5
+  m_Name: TextContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6620838490867151045
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490867151044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6620838489938972601}
+  - {fileID: 6620838490274690838}
+  m_Father: {fileID: 6620838491376349931}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 139, y: -0.000022888}
+  m_SizeDelta: {x: 747.89026, y: 413.03207}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6620838490867151046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838490867151044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 6620838490274690838}
+  m_Horizontal: 0
+  m_Vertical: 1
+  m_MovementType: 1
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 6620838489938972602}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &6620838491376349930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6620838491376349931}
+  - component: {fileID: 6620838491376349926}
+  - component: {fileID: 6620838491376349925}
+  - component: {fileID: 6620838491376349924}
+  m_Layer: 5
+  m_Name: ScrollArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &6620838491376349931
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838491376349930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6620838490867151045}
+  m_Father: {fileID: 6620838489366663644}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -4.299988, y: 0}
+  m_SizeDelta: {x: -213.60626, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6620838491376349926
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838491376349930}
+  m_CullTransparentMesh: 0
+--- !u!114 &6620838491376349925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838491376349930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 09ea4dfa52d1cf947871aaf2d08e1353, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6620838491376349924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6620838491376349930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
