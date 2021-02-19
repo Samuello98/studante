@@ -21,11 +21,13 @@ public class PhysicsGrabbable : Grabbable
     {
         _collider.enabled = false;
         _rigidbody.isKinematic = true;
+        FindObjectOfType<AudioManager>().Play("BookGrab");
     }
 
     public override void Drop()
     {
         _collider.enabled = true;
         _rigidbody.isKinematic = false;
+        FindObjectOfType<AudioManager>().Play("BookDrop");
     }
 }

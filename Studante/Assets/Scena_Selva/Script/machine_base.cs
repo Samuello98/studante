@@ -27,9 +27,10 @@ public class machine_base : MonoBehaviour
     private Animator _animator;
     private bool chased = false;
     public GameObject target2;
-    private bool canvasNotActivated = true; 
+    private bool canvasNotActivated = true;
+    private bool alreadyPlayed;
 
-    
+
     void Start()
     {
         _navMeshAgent = GetComponent<NavMeshAgent>();
@@ -64,7 +65,6 @@ public class machine_base : MonoBehaviour
                 FollowTarget();
                 chased = true;
                 StartCoroutine(activateVirgilio());
-
                 break;
           /*  case GuardState.Attack:
                 Attack();
@@ -85,8 +85,16 @@ public class machine_base : MonoBehaviour
                 {
                     newGuardState = GuardState.Chase;
                     _animator.SetBool("walk", true);
+
+                    //audio
+                    if (alreadyPlayed == false) 
+                    {
+                        FindObjectOfType<AudioManager>().FadeIn("VistaFiere");
+                        FindObjectOfType<AudioManager>().Play("VistaFiereHit");
+                        alreadyPlayed = true;
+                    }
                 }
-                    break;
+                break;
                 
             case GuardState.Chase:
                 if (!IsTargetWithinDistance(_minChaseDistance))
@@ -94,6 +102,7 @@ public class machine_base : MonoBehaviour
                     newGuardState = GuardState.Patrol;
                     _animator.SetBool("walk", false);
 
+                    
                 }
                 break;
                 
@@ -150,6 +159,8 @@ public class machine_base : MonoBehaviour
     {
         if (chased)
         {
+            
+
             yield return new WaitForSeconds(10f);
             if (canvasNotActivated)
             {
@@ -159,6 +170,11 @@ public class machine_base : MonoBehaviour
             Virgilio.SetActive(true);
             _target = target2;
             StartCoroutine(ViaDialogo());
+
+            //audio
+            yield return new WaitForSeconds(3f);
+            FindObjectOfType<AudioManager>().Stop("VistaFiere");
+
         }
 
        
@@ -166,8 +182,7 @@ public class machine_base : MonoBehaviour
     public IEnumerator ViaDialogo()
     {
         yield return new WaitForSeconds(3f);
-        canvas.enabled = false; 
-
+        canvas.enabled = false;
     }
 
     

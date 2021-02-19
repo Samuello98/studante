@@ -16,6 +16,7 @@ public class ManagerOnline : MonoBehaviour
     {
         boatScript.enabled = false;
         carCam.enabled = false;
+        carCam.GetComponent<AudioListener>().enabled = false;
         inVeh = false;
     }
 
@@ -36,7 +37,9 @@ public class ManagerOnline : MonoBehaviour
         {
             player = playerObj;
             sceneCam.enabled = false;
+            sceneCam.GetComponent<AudioListener>().enabled = false;
             carCam.enabled = true;
+            carCam.GetComponent<AudioListener>().enabled = true;
             boatScript.enabled = true;
             player.SetActive(false);
             player.transform.parent = this.transform;
@@ -47,7 +50,9 @@ public class ManagerOnline : MonoBehaviour
         {
             player.SetActive(true);
             sceneCam.enabled = true;
+            sceneCam.GetComponent<AudioListener>().enabled = true;
             carCam.enabled = false;
+            carCam.GetComponent<AudioListener>().enabled = false;
             boatScript.enabled = false;
             player.transform.parent = null;
 

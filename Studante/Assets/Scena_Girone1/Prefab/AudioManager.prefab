@@ -46,7 +46,57 @@ MonoBehaviour:
   sounds:
   - name: Book
     clip: {fileID: 8300000, guid: d102e1e544cd32c43bf051f609e071a6, type: 3}
-    volume: 1
+    volume: 0.69
     pitch: 1
     loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: RightAnswer
+    clip: {fileID: 8300000, guid: 75f1daddff563244883eea5eee1185eb, type: 3}
+    volume: 0.54
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: WrongAnswer
+    clip: {fileID: 8300000, guid: 04a1718dd31db8543ab7684fea77370e, type: 3}
+    volume: 0.47
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: EndQuiz
+    clip: {fileID: 8300000, guid: 7a7bf44d9e70a204f828a5f1efc91cb6, type: 3}
+    volume: 0.71
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: BookGrab
+    clip: {fileID: 8300000, guid: 7a7bf44d9e70a204f828a5f1efc91cb6, type: 3}
+    volume: 0.71
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: BookDrop
+    clip: {fileID: 8300000, guid: 7a7bf44d9e70a204f828a5f1efc91cb6, type: 3}
+    volume: 0.71
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: VistaFiere
+    clip: {fileID: 8300000, guid: 60deea32f27813040841b23b59dbf13a, type: 3}
+    volume: 0.07
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+  - name: VistaFiereHit
+    clip: {fileID: 8300000, guid: d3a34e7b71fe4c043a09bddb6527f343, type: 3}
+    volume: 0.21
+    pitch: 1
+    loop: 0
+    playOnAwake: 0
     source: {fileID: 0}

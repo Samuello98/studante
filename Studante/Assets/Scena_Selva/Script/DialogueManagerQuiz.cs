@@ -109,7 +109,7 @@ public class DialogueManagerQuiz : MonoBehaviour
         DisplayNextSentence();
         button.interactable = true;
         cubo.SetActive(false);
-
+        FindObjectOfType<AudioManager>().Play("RightAnswer");
 
 
     }
@@ -120,7 +120,7 @@ public class DialogueManagerQuiz : MonoBehaviour
         Debug.Log(feedback);
         sentences.Enqueue(feedback);
         DisplayNextSentence();
-
+        FindObjectOfType<AudioManager>().Play("WrongAnswer");
 
     }
 
@@ -128,6 +128,7 @@ public class DialogueManagerQuiz : MonoBehaviour
     public void EndQuiz()
     {
         animator_Q.SetBool("DisplayQuiz", false);
+        FindObjectOfType<AudioManager>().Play("EndQuiz");
     }
 
 

@@ -8,6 +8,8 @@ public class AudioManager : MonoBehaviour
 
 	public static AudioManager instance;
 
+	private float initialVolume;
+
 	void Awake()
 	{
 
@@ -28,6 +30,8 @@ public class AudioManager : MonoBehaviour
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
+			s.source.playOnAwake = true;
+			//s.source.outputAudioMixerGroup = s.mixer;
 		}
 	}
 
@@ -36,10 +40,69 @@ public class AudioManager : MonoBehaviour
 	{
 		Sound s = Array.Find(sounds, sound => sound.name == name);
 		if (s == null)
+		{
 			Debug.LogWarning("Sound: " + name + " not found!");
-		return;
+			return;
+		}
 		s.source.Play();
 
 	}
 
+	public void Stop(string name)
+	{
+		Sound s = Array.Find(sounds, sound => sound.name == name);
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + name + " not found!");
+			return;
+		}
+		while (s.source.volume > 0)
+		{
+			s.source.volume -= Time.deltaTime / 3;
+		}
+		//s.source.Stop();
+	}
+
+
+
+	public void FadeIn(string name)
+	{
+		Sound s = Array.Find(sounds, sound => sound.name == name);
+			if (s == null)
+			{
+				Debug.LogWarning("Sound: " + name + " not found!");
+				return;
+			}
+		
+		initialVolume = s.source.volume;
+		s.source.volume = 0f;
+		s.source.Play();
+			while (s.source.volume < initialVolume)
+				{ 
+					s.source.volume += Time.deltaTime / 3 ; 
+				}
+
+		
+
+	}
+
+	public void FadeOut(string name)
+	{
+		Sound s = Array.Find(sounds, sound => sound.name == name);
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + name + " not found!");
+			return;
+		}
+		
+		initialVolume = s.source.volume;
+		//s.source.Play();
+			while (s.source.volume > 0)
+			{
+				s.source.volume -= Time.deltaTime / 3;
+			}
+			
+		//s.source.volume = initialVolume;
+		
+	}
 }
