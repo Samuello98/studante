@@ -19,11 +19,20 @@ public class FirstPersonCharacterController : MonoBehaviour
     private Vector3 _velocity;
     private bool _isGrounded;
 
+
+    private AudioSource audioPassi;
+
     void Start()
     {
         _characterController = GetComponent<CharacterController>();
 
         Cursor.lockState = CursorLockMode.Locked;
+
+        //audio
+        
+        //groundCheck = this.gameObject.Transform.GetChild();
+        audioPassi = this.gameObject.transform.Find("GroundCheck").GetComponent<AudioSource>();
+        
     }
     // Update is called once per frame
     void Update()
@@ -65,6 +74,17 @@ public class FirstPersonCharacterController : MonoBehaviour
         //FALLING
         _velocity.y += _gravity * Time.deltaTime;
         _characterController.Move(_velocity * Time.deltaTime);
+
+        //Audio - stop suono passi
+        Debug.Log("x: " + move.x + "y: " + move.y + "z: " + move.z);
+        if ((move.magnitude - move.y) < .001f)
+        {
+            audioPassi.mute = true;
+        }
+        else 
+        {
+            audioPassi.mute = false;
+        }
     }
 
     private void UpdateCursor()

@@ -14,14 +14,14 @@ public class NPCFollow : MonoBehaviour
     public Animator animator;
    
     
-    
-    AudioSource audio;
+    //audio
+    private AudioSource audio;
 
     private void Start()
     {
     audio = GetComponent<AudioSource>();
     }
-
+    //audioEnd
      
 
     private void Update()
@@ -36,6 +36,7 @@ public class NPCFollow : MonoBehaviour
                 animator.SetBool("walk", true);
                 transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, FollowSpeed);
 
+                //audio
                 audio.mute = false;
                 
             }
@@ -44,6 +45,8 @@ public class NPCFollow : MonoBehaviour
                 FollowSpeed = 0;
                 animator.SetBool("walk", false);
 
+
+                //audio
                 audio.mute = true;
                 
             }
