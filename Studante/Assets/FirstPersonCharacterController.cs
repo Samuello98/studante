@@ -76,7 +76,7 @@ public class FirstPersonCharacterController : MonoBehaviour
         _characterController.Move(_velocity * Time.deltaTime);
 
         //Audio - stop suono passi
-        Debug.Log("x: " + move.x + "y: " + move.y + "z: " + move.z);
+        
         if ((move.magnitude - move.y) < .001f)
         {
             audioPassi.mute = true;

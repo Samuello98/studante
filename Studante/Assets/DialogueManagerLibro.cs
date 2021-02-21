@@ -24,6 +24,10 @@ public class DialogueManagerLibro : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        //audio 
+        FindObjectOfType<AudioManager>().Play("BookDone");
+        //audioEnd
+
         Cursor.lockState = CursorLockMode.None;
         animator_D.SetBool("IsOpen", true);
 
