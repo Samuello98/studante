@@ -21,6 +21,7 @@ public class machine_base : MonoBehaviour
     [SerializeField] private float _stoppingDistance;
     public GameObject Virgilio;
     public Canvas canvas;
+   
 
     private GuardState _currentGuardState;
     private NavMeshAgent _navMeshAgent;
