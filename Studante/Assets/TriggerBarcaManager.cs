@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class TriggerBarcaManager : MonoBehaviour
 {
-    public GameObject muro; 
+    public GameObject muro;
+    public GameObject virgilio_B;
 
     
 
     void OnTriggerEnter(Collider other)
+
     {
-        if(other.name != "barca")
+        Debug.Log("Barca nel trigger");
+        if (other.name != "barca")
         {
-            Debug.Log("Barca nel trigger");
+            Debug.Log("Allowed Player");
             muro.SetActive(false);
+            virgilio_B.SetActive(true); 
         }
         
     }

@@ -3998,6 +3998,16 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1636213447}
+    - target: {fileID: 1086867795600870868, guid: 997e7cc503fe9d64ab89ae9c0f2895ba,
+        type: 3}
+      propertyPath: AllowedDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086867795600870868, guid: 997e7cc503fe9d64ab89ae9c0f2895ba,
+        type: 3}
+      propertyPath: FollowSpeed
+      value: 0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 1086867795600870871, guid: 997e7cc503fe9d64ab89ae9c0f2895ba,
         type: 3}
       propertyPath: m_Name

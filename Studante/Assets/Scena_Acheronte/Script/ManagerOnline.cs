@@ -8,6 +8,7 @@ public class ManagerOnline : MonoBehaviour
     public Camera sceneCam;
     public Camera carCam;
     public BoatMovement boatScript;
+    public GameObject virgilioA;
 
     private bool inVeh;
     public GameObject player;
@@ -24,6 +25,7 @@ public class ManagerOnline : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
+            virgilioA.SetActive(false);
             if (inVeh == true)
             {
                 vehicleControl(null);

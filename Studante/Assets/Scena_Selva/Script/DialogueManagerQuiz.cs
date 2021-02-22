@@ -103,7 +103,7 @@ public class DialogueManagerQuiz : MonoBehaviour
     public void CorrectAnswer()
     {
 
-        string feedback = "Right Answer!";
+        string feedback = "Risposta Esatta!";
         Debug.Log(feedback);
         sentences.Enqueue(feedback);
         DisplayNextSentence();
@@ -116,7 +116,7 @@ public class DialogueManagerQuiz : MonoBehaviour
 
     public void WrongAnswer()
     {
-        string feedback = "Wrong Answer, try again";
+        string feedback = "Risposta errata, riprova";
         Debug.Log(feedback);
         sentences.Enqueue(feedback);
         DisplayNextSentence();
