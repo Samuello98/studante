@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scena_Girone1/Scenes/Scena_Girone2.unity
     guid: 31333867a55a4e346841d5efbf0473ea
+  - enabled: 1
+    path: Assets/Menu_Iniziale/Menu.unity
+    guid: ac28e7fc620864f43b72c7732fa0bc8a
   m_configObjects: {}

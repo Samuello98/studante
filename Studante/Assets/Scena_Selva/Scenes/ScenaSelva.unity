@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 90d894a2c148c054f94595b486948032,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2083,6 +2083,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 65ca3dfd209c099429a7c1b542e295ae,
         type: 3}
+    - target: {fileID: 909099520733796384, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: Controller
+      value: 
+      objectReference: {fileID: 703240475}
     - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4373,6 +4378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Beatricedue: {fileID: 1957804695}
+  Controller: {fileID: 703240475}
   triggered: 0
 --- !u!65 &903858258
 BoxCollider:
@@ -7114,6 +7120,7 @@ MonoBehaviour:
   nameText: {fileID: 1003273066}
   dialogueText: {fileID: 1762137257}
   button: {fileID: 1030372499}
+  platform: {fileID: 0}
 --- !u!1001 &1414090681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10304,6 +10311,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 909099520733796384, guid: 4cf5340b3bdafec4eb24a58729f0199f,
+        type: 3}
+      propertyPath: Controller
+      value: 
+      objectReference: {fileID: 703240475}
     - target: {fileID: 909099520733796391, guid: 4cf5340b3bdafec4eb24a58729f0199f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10556,6 +10568,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _jumpHeight
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7950229221909746916, guid: cd91afabc945850429cd29bc93bec0b9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7950229221909746919, guid: cd91afabc945850429cd29bc93bec0b9,
         type: 3}

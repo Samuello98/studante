@@ -11,6 +11,7 @@ public class DialogueManagerDialogo : MonoBehaviour
     public Text nameText;
     public Text dialogueText;
     public Button button;
+    public GameObject platform;
 
 
 
@@ -70,6 +71,7 @@ public class DialogueManagerDialogo : MonoBehaviour
     {
         animator_D.SetBool("IsOpen", false);
         Cursor.lockState = CursorLockMode.Locked;
+        platform.SetActive(true);
 
 
 
