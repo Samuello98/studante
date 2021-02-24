@@ -28,7 +28,7 @@ public class machine_base : MonoBehaviour
     private bool chased = false;
     public GameObject target2;
     private bool canvasNotActivated = true;
-    private bool alreadyPlayed;
+    private bool alreadyPlayed = false;
 
 
     void Start()
@@ -64,6 +64,7 @@ public class machine_base : MonoBehaviour
             case GuardState.Chase:
                 FollowTarget();
                 chased = true;
+                
                 StartCoroutine(activateVirgilio());
                 break;
           /*  case GuardState.Attack:
@@ -85,14 +86,15 @@ public class machine_base : MonoBehaviour
                 {
                     newGuardState = GuardState.Chase;
                     _animator.SetBool("walk", true);
-
+                    FindObjectOfType<AudioManager>().Play("VistaFiere");
+                    /*
                     //audio
                     if (alreadyPlayed == false) 
                     {
                         FindObjectOfType<AudioManager>().FadeIn("VistaFiere");
                         FindObjectOfType<AudioManager>().Play("VistaFiereHit");
                         alreadyPlayed = true;
-                    }
+                    }*/
                 }
                 break;
                 
@@ -172,8 +174,8 @@ public class machine_base : MonoBehaviour
             StartCoroutine(ViaDialogo());
 
             //audio
-            yield return new WaitForSeconds(3f);
-            FindObjectOfType<AudioManager>().Stop("VistaFiere");
+            //yield return new WaitForSeconds(3f);
+            //FindObjectOfType<AudioManager>().Stop("VistaFiere");
 
         }
 

@@ -11424,7 +11424,8 @@ AudioSource:
   m_GameObject: {fileID: 891331379}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5341193455133750055, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 38267dde9ebaef645820f4df58c5e918, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.212
@@ -13317,7 +13318,8 @@ AudioSource:
   m_GameObject: {fileID: 1095353491}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4584344013019259590, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: d1b920436e124464b810d0d79d987933, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.02
@@ -13700,7 +13702,8 @@ AudioSource:
   m_GameObject: {fileID: 1155787954}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7750865308683248987, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f6c7d6890a0a02d449660a1bdf426819, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.21
@@ -16276,7 +16279,8 @@ AudioSource:
   m_GameObject: {fileID: 1494344079}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 1630988325941337515, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 80f0931c93bcfab47a6d00f63fa8fc08, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.47
@@ -16632,7 +16636,8 @@ AudioSource:
   m_GameObject: {fileID: 1529536329}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4584344013019259590, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 57f57b0fa0f4db74db58f83461c77bd2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.007
@@ -17489,7 +17494,8 @@ AudioSource:
   m_GameObject: {fileID: 1618548903}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -5341193455133750055, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 65ca86cc6b5fc9140897841993743832, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.27
@@ -19578,7 +19584,8 @@ AudioSource:
   m_GameObject: {fileID: 1925595212}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -6642408665945502006, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: f43239d561008f84f9c611abd374ce48, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.06
@@ -22185,6 +22192,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4174260763350323686, guid: b53ad8132b7c3fe4c8e322e8658fdcf1,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 82fcc16c0cc5b144a90ebfa14f383d05, type: 2}
     - target: {fileID: 5079176514570548594, guid: b53ad8132b7c3fe4c8e322e8658fdcf1,
         type: 3}
       propertyPath: m_Name
@@ -22708,6 +22720,103 @@ MonoBehaviour:
     - 'Cosa rispondi a Caronte per permetterti il passaggio? '
     name: Caronte
     isQuiz: 1
+--- !u!82 &4622749644357979374
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4622749644357979369}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -2648191944828230937, guid: a18ef718960858344a25ea5d0ce99494,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: c28811f70e48227428502b1379fbe006, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.04
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &5900256342777905866
 PrefabInstance:
   m_ObjectHideFlags: 0
