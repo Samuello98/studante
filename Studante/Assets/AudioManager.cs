@@ -33,7 +33,7 @@ public class AudioManager : MonoBehaviour
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
 			s.source.playOnAwake = true;
-			
+			s.alreadyPlayed = false;
 			//s.source.outputAudioMixerGroup = s.mixer;
 		}
 	}
@@ -59,8 +59,13 @@ public class AudioManager : MonoBehaviour
 			Debug.LogWarning("Sound: " + name + " not found!");
 			return;
 		}
-		s.source.Play();
-
+		if (!s.alreadyPlayed)
+		{
+			s.source.Play();
+			s.alreadyPlayed = true;
+			
+		}
+		else return;
 
 	}
 

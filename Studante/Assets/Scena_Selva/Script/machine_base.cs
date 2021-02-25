@@ -88,12 +88,10 @@ public class machine_base : MonoBehaviour
                     newGuardState = GuardState.Chase;
                     _animator.SetBool("walk", true);
 
-                    if (!alreadyPlayed)
-                    {
-                        Debug.Log("PLAYING");
-                        FindObjectOfType<AudioManager>().Play("VistaFiere");
-                        alreadyPlayed = true;
-                    }
+                   
+                        
+                        FindObjectOfType<AudioManager>().PlayOneShot("VistaFiere");
+                    
                     //audio
 
                     /*
@@ -170,7 +168,7 @@ public class machine_base : MonoBehaviour
     {
         if (chased)
         {
-
+            
             
             yield return new WaitForSeconds(10f);
             if (canvasNotActivated)
