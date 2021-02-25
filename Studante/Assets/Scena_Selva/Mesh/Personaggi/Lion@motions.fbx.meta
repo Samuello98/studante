@@ -436,7 +436,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: _Object_Pivot_Node_
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1

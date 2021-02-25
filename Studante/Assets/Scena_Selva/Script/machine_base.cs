@@ -37,7 +37,7 @@ public class machine_base : MonoBehaviour
         _currentGuardState = GuardState.Patrol;
         _animator = GetComponent<Animator>();
         canvas.enabled = false;
-
+        alreadyPlayed = false;
 
     }
 
@@ -48,12 +48,13 @@ public class machine_base : MonoBehaviour
         
         UpdateState(); //cosa fare
         CheckTransition(); //come cambiare 
-        Debug.Log("posizione fiera" + transform.position + "posizione target " + _target.transform.position);
+        //Debug.Log("posizione fiera" + transform.position + "posizione target " + _target.transform.position);
         
         
         
     }
 
+   
     private void UpdateState()
     {
         switch (_currentGuardState)
@@ -64,7 +65,7 @@ public class machine_base : MonoBehaviour
             case GuardState.Chase:
                 FollowTarget();
                 chased = true;
-                
+
                 StartCoroutine(activateVirgilio());
                 break;
           /*  case GuardState.Attack:
@@ -86,7 +87,15 @@ public class machine_base : MonoBehaviour
                 {
                     newGuardState = GuardState.Chase;
                     _animator.SetBool("walk", true);
-                    FindObjectOfType<AudioManager>().Play("VistaFiere");
+
+                    if (!alreadyPlayed)
+                    {
+                        Debug.Log("PLAYING");
+                        FindObjectOfType<AudioManager>().Play("VistaFiere");
+                        alreadyPlayed = true;
+                    }
+                    //audio
+
                     /*
                     //audio
                     if (alreadyPlayed == false) 
@@ -161,8 +170,8 @@ public class machine_base : MonoBehaviour
     {
         if (chased)
         {
-            
 
+            
             yield return new WaitForSeconds(10f);
             if (canvasNotActivated)
             {
