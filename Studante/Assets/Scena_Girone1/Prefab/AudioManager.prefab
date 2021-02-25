@@ -46,7 +46,7 @@ MonoBehaviour:
   sounds:
   - name: Book
     clip: {fileID: 8300000, guid: d102e1e544cd32c43bf051f609e071a6, type: 3}
-    mixerGroup: {fileID: -7944879925243705797, guid: a18ef718960858344a25ea5d0ce99494,
+    mixerGroup: {fileID: 6377891303899399748, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
     volume: 0.69
     pitch: 1
@@ -57,7 +57,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 430a09c74e74b9a4da1d8bb819832c11, type: 3}
     mixerGroup: {fileID: -6338671952971908143, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
-    volume: 0.54
+    volume: 0.29
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -66,42 +66,43 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 04a1718dd31db8543ab7684fea77370e, type: 3}
     mixerGroup: {fileID: -6338671952971908143, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
-    volume: 0.47
+    volume: 0.24
     pitch: 1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: EndQuiz
-    clip: {fileID: 8300000, guid: 73d8846fd82a91149b612c943a903185, type: 3}
+    clip: {fileID: 8300000, guid: 3ddd529fa72cb0c41ad9672715d81786, type: 3}
     mixerGroup: {fileID: -6338671952971908143, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
-    volume: 0.1
+    volume: 0.11
     pitch: 1
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: BookGrab
-    clip: {fileID: 8300000, guid: c587531f3bf3baa4e986136d86d63625, type: 3}
-    mixerGroup: {fileID: 0}
-    volume: 0.57
-    pitch: 1
+    clip: {fileID: 8300000, guid: 043428257c898fa4582fd60b421f2907, type: 3}
+    mixerGroup: {fileID: 5705681952224514986, guid: a18ef718960858344a25ea5d0ce99494,
+      type: 2}
+    volume: 0.15
+    pitch: 0.6
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: BookDrop
-    clip: {fileID: 8300000, guid: 00f1a1e385f5fc843bbad4fb873da958, type: 3}
-    mixerGroup: {fileID: -7944879925243705797, guid: a18ef718960858344a25ea5d0ce99494,
+    clip: {fileID: 8300000, guid: 043428257c898fa4582fd60b421f2907, type: 3}
+    mixerGroup: {fileID: 5705681952224514986, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
-    volume: 0.53
-    pitch: 1
+    volume: 0.1
+    pitch: 0.8
     loop: 0
     playOnAwake: 0
     source: {fileID: 0}
   - name: VistaFiere
     clip: {fileID: 8300000, guid: d6163a15dd3d20943b79c01e170f3c2d, type: 3}
-    mixerGroup: {fileID: -7944879925243705797, guid: a18ef718960858344a25ea5d0ce99494,
+    mixerGroup: {fileID: 3128415401101033043, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
-    volume: 0.38
+    volume: 0.11
     pitch: 1
     loop: 0
     playOnAwake: 0
@@ -115,10 +116,10 @@ MonoBehaviour:
     playOnAwake: 0
     source: {fileID: 0}
   - name: BookDone
-    clip: {fileID: 8300000, guid: b165695e911ed3f489bf529103036f46, type: 3}
-    mixerGroup: {fileID: -7944879925243705797, guid: a18ef718960858344a25ea5d0ce99494,
+    clip: {fileID: 8300000, guid: 75f1daddff563244883eea5eee1185eb, type: 3}
+    mixerGroup: {fileID: 5705681952224514986, guid: a18ef718960858344a25ea5d0ce99494,
       type: 2}
-    volume: 0.44
+    volume: 0.09
     pitch: 1
     loop: 0
     playOnAwake: 0

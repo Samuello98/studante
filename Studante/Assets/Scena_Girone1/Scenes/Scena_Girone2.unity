@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: be95010e327ef0b4eaabffaf5b859f3f,
     type: 2}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -205,6 +205,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Volume
       value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851597580648396720, guid: 947979d7ff379de4c9bc877fddb34ccf,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.03
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 947979d7ff379de4c9bc877fddb34ccf, type: 3}
@@ -9870,6 +9875,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 56550666424514442, guid: 7e76bf9819c606c46be58a657041feea,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 60c9de9e563ae1b439bb9dc4604a75d3, type: 2}
     - target: {fileID: 919132149155446097, guid: 7e76bf9819c606c46be58a657041feea,
         type: 3}
       propertyPath: m_Name
@@ -12393,26 +12403,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651181394938482946, guid: 8cf176dffdc044e4d8a322f01fdfe7dd,
-        type: 3}
-      propertyPath: sounds.Array.data[4].volume
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651181394938482946, guid: 8cf176dffdc044e4d8a322f01fdfe7dd,
-        type: 3}
-      propertyPath: sounds.Array.data[5].volume
-      value: 0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651181394938482946, guid: 8cf176dffdc044e4d8a322f01fdfe7dd,
-        type: 3}
-      propertyPath: sounds.Array.data[1].volume
-      value: 0.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 1651181394938482946, guid: 8cf176dffdc044e4d8a322f01fdfe7dd,
-        type: 3}
-      propertyPath: sounds.Array.data[2].volume
-      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 6707102249099417749, guid: 8cf176dffdc044e4d8a322f01fdfe7dd,
         type: 3}

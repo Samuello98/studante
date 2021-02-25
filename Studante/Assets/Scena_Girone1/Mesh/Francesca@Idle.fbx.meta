@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: peopleColors.001
+    second: {fileID: 2100000, guid: ccf7f93d8520b8c479cc67aa344df108, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

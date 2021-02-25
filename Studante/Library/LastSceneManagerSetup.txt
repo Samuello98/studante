@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scena_Acheronte/Scenes/Scena_Acheronte.unity
+- path: Assets/Scena_Girone1/Scenes/Scena_Girone2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
