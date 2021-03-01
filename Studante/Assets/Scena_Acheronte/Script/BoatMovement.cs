@@ -10,7 +10,8 @@ public class BoatMovement : MonoBehaviour
     public CharacterController controller;
     public float speed = 12f;
     public Animator animator;
-
+    public GameObject remo;
+    private AudioSource audioRemo;
 
     float xRotation = 0f;
     float yRotation = 90f;
@@ -21,6 +22,8 @@ public class BoatMovement : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         yRotation = playerBody.localEulerAngles.y;
+        audioRemo = remo.GetComponent<AudioSource>();
+        audioRemo.mute = false;
     }
     void Update()
     {
@@ -36,13 +39,15 @@ public class BoatMovement : MonoBehaviour
 
         Vector3 move = (transform.right * x + transform.forward * z).normalized;
 
-        if (x == 0 && z == 0)
+        if (move.x + move.z < 0.01)
         {
             animator.SetBool("isMoving", false);
+            audioRemo.mute = true;
         }
         else
         {
             animator.SetBool("isMoving", true);
+            audioRemo.mute = false;
         }
 
         controller.Move(move * speed * Time.deltaTime);
