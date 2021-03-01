@@ -23,10 +23,12 @@ public class FirstPersonCharacterController : MonoBehaviour
     private AudioSource audioPassi;
 
     void Start()
+
     {
         _characterController = GetComponent<CharacterController>();
 
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         //audio
         

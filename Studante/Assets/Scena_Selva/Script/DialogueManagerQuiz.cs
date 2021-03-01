@@ -31,6 +31,7 @@ public class DialogueManagerQuiz : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         animator_D.SetBool("IsOpen", true);
 
@@ -90,6 +91,7 @@ public class DialogueManagerQuiz : MonoBehaviour
 
         EndQuiz();
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void StartQuiz()
@@ -129,6 +131,7 @@ public class DialogueManagerQuiz : MonoBehaviour
     {
         animator_Q.SetBool("DisplayQuiz", false);
         FindObjectOfType<AudioManager>().Play("EndQuiz");
+        
     }
 
 

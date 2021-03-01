@@ -31,6 +31,7 @@ public class DialogueManagerMinosse : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
 
         animator_D.SetBool("IsOpen", true);
 
@@ -88,6 +89,7 @@ public class DialogueManagerMinosse : MonoBehaviour
 
         EndQuiz();
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
     }
 
